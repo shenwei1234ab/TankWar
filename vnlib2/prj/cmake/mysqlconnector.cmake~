@@ -1,0 +1,4 @@
+INCLUDE_DIRECTORIES(/usr/local/include/mysql)
+LINK_DIRECTORIES(/usr/local/lib/mysql)
+FILE(GLOB VN_MYSQLCONNECTOR_SRC ${CMAKE_CURRENT_LIST_DIR}/../../src/mysql_connector/*.cpp)
+ADD_LIBRARY(vnmysqlconnector STATIC ${VN_MYSQLCONNECTOR_SRC})

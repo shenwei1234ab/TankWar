@@ -1,0 +1,1707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B008F7981AEB9D97000D5A04 /* vnDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F7961AEB9D97000D5A04 /* vnDefine.h */; };
+		B008F7991AEB9D97000D5A04 /* vnFlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F7971AEB9D97000D5A04 /* vnFlatform.h */; };
+		B008F7B51AEB9DA8000D5A04 /* vnAABox2.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F79B1AEB9DA8000D5A04 /* vnAABox2.h */; };
+		B008F7B71AEB9DA8000D5A04 /* vnAllocatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F79D1AEB9DA8000D5A04 /* vnAllocatedObject.h */; };
+		B008F7B81AEB9DA8000D5A04 /* vnAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F79E1AEB9DA8000D5A04 /* vnAssert.h */; };
+		B008F7B91AEB9DA8000D5A04 /* vnBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F79F1AEB9DA8000D5A04 /* vnBuffer.h */; };
+		B008F7BA1AEB9DA8000D5A04 /* vnColor.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F7A01AEB9DA8000D5A04 /* vnColor.h */; };
+		B008F7BB1AEB9DA8000D5A04 /* vnCommandList.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F7A11AEB9DA8000D5A04 /* vnCommandList.h */; };
+		B008F7BC1AEB9DA8000D5A04 /* vnCompressedInt.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F7A21AEB9DA8000D5A04 /* vnCompressedInt.h */; };
+		B008F7BD1AEB9DA8000D5A04 /* vnDataStream.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F7A31AEB9DA8000D5A04 /* vnDataStream.h */; };
+		B008F7BE1AEB9DA8000D5A04 /* vnFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F7A41AEB9DA8000D5A04 /* vnFileManager.h */; };
+		B008F7BF1AEB9DA8000D5A04 /* vnFilePath.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F7A51AEB9DA8000D5A04 /* vnFilePath.h */; };
+		B008F7C01AEB9DA8000D5A04 /* vnFileSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F7A61AEB9DA8000D5A04 /* vnFileSystem.h */; };
+		B008F7C11AEB9DA8000D5A04 /* vnLog.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F7A71AEB9DA8000D5A04 /* vnLog.h */; };
+		B008F7C21AEB9DA8000D5A04 /* vnMath.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F7A81AEB9DA8000D5A04 /* vnMath.h */; };
+		B008F7C31AEB9DA8000D5A04 /* vnMemory.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F7A91AEB9DA8000D5A04 /* vnMemory.h */; };
+		B008F7C41AEB9DA8000D5A04 /* vnMemoryPool.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F7AA1AEB9DA8000D5A04 /* vnMemoryPool.h */; };
+		B008F7C51AEB9DA8000D5A04 /* vnMemoryTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F7AB1AEB9DA8000D5A04 /* vnMemoryTracker.h */; };
+		B008F7C61AEB9DA8000D5A04 /* vnNonCopyable.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F7AC1AEB9DA8000D5A04 /* vnNonCopyable.h */; };
+		B008F7C71AEB9DA8000D5A04 /* vnRefCounted.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F7AD1AEB9DA8000D5A04 /* vnRefCounted.h */; };
+		B008F7C81AEB9DA8000D5A04 /* vnSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F7AE1AEB9DA8000D5A04 /* vnSingleton.h */; };
+		B008F7C91AEB9DA8000D5A04 /* vnSingletonManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F7AF1AEB9DA8000D5A04 /* vnSingletonManager.h */; };
+		B008F7CA1AEB9DA8000D5A04 /* vnSpinLock.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F7B01AEB9DA8000D5A04 /* vnSpinLock.h */; };
+		B008F7CB1AEB9DA8000D5A04 /* vnUnicode.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F7B11AEB9DA8000D5A04 /* vnUnicode.h */; };
+		B008F7CC1AEB9DA8000D5A04 /* vnVariable.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F7B21AEB9DA8000D5A04 /* vnVariable.h */; };
+		B008F7CD1AEB9DA8000D5A04 /* vnVariableAccessor.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F7B31AEB9DA8000D5A04 /* vnVariableAccessor.h */; };
+		B008F7CE1AEB9DA8000D5A04 /* vnVector2.h in Headers */ = {isa = PBXBuildFile; fileRef = B008F7B41AEB9DA8000D5A04 /* vnVector2.h */; };
+		B008F7E31AEB9F4D000D5A04 /* vnFileSystemOS.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B008F7D21AEB9F4D000D5A04 /* vnFileSystemOS.hpp */; };
+		B008F7E41AEB9F4D000D5A04 /* vnBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B008F7D31AEB9F4D000D5A04 /* vnBuffer.cpp */; };
+		B008F7E51AEB9F4D000D5A04 /* vnColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B008F7D41AEB9F4D000D5A04 /* vnColor.cpp */; };
+		B008F7E61AEB9F4D000D5A04 /* vnCommandList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B008F7D51AEB9F4D000D5A04 /* vnCommandList.cpp */; };
+		B008F7E71AEB9F4D000D5A04 /* vnCompressedInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B008F7D61AEB9F4D000D5A04 /* vnCompressedInt.cpp */; };
+		B008F7E81AEB9F4D000D5A04 /* vnDataStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B008F7D71AEB9F4D000D5A04 /* vnDataStream.cpp */; };
+		B008F7E91AEB9F4D000D5A04 /* vnFileManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B008F7D81AEB9F4D000D5A04 /* vnFileManager.cpp */; };
+		B008F7EA1AEB9F4D000D5A04 /* vnFilePath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B008F7D91AEB9F4D000D5A04 /* vnFilePath.cpp */; };
+		B008F7EB1AEB9F4D000D5A04 /* vnFileSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B008F7DA1AEB9F4D000D5A04 /* vnFileSystem.cpp */; };
+		B008F7EC1AEB9F4D000D5A04 /* vnLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B008F7DB1AEB9F4D000D5A04 /* vnLog.cpp */; };
+		B008F7ED1AEB9F4D000D5A04 /* vnMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B008F7DC1AEB9F4D000D5A04 /* vnMemory.cpp */; };
+		B008F7EE1AEB9F4D000D5A04 /* vnMemoryTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B008F7DD1AEB9F4D000D5A04 /* vnMemoryTracker.cpp */; };
+		B008F7F01AEB9F4D000D5A04 /* vnSingletonManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B008F7DF1AEB9F4D000D5A04 /* vnSingletonManager.cpp */; };
+		B008F7F11AEB9F4D000D5A04 /* vnSpinLock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B008F7E01AEB9F4D000D5A04 /* vnSpinLock.cpp */; };
+		B008F7F21AEB9F4D000D5A04 /* vnUnicode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B008F7E11AEB9F4D000D5A04 /* vnUnicode.cpp */; };
+		B008F7F31AEB9F4D000D5A04 /* vnVariable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B008F7E21AEB9F4D000D5A04 /* vnVariable.cpp */; };
+		B008F7F51AEBA361000D5A04 /* vnMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B008F7F41AEBA361000D5A04 /* vnMath.cpp */; };
+		B01164101B622038008FC7CA /* vnPktCoder_csharp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B011640F1B622038008FC7CA /* vnPktCoder_csharp.cpp */; };
+		B01FE2731B808708004F2B6D /* vnOpenSSL_Key.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B01FE2721B808708004F2B6D /* vnOpenSSL_Key.cpp */; };
+		B01FE2781B80936B004F2B6D /* vnOpenSSL_Signer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B01FE2771B80936B004F2B6D /* vnOpenSSL_Signer.cpp */; };
+		B01FE27C1B80A48E004F2B6D /* vnOpenSSL_Verifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B01FE27B1B80A48E004F2B6D /* vnOpenSSL_Verifier.cpp */; };
+		B0434F3C1AEC9E9300565633 /* vnLexAnalizers.h in Headers */ = {isa = PBXBuildFile; fileRef = B0434F341AEC9E9300565633 /* vnLexAnalizers.h */; };
+		B0434F3D1AEC9E9300565633 /* vnLexer.h in Headers */ = {isa = PBXBuildFile; fileRef = B0434F351AEC9E9300565633 /* vnLexer.h */; };
+		B0434F3E1AEC9E9300565633 /* vnLexLR_Node.h in Headers */ = {isa = PBXBuildFile; fileRef = B0434F361AEC9E9300565633 /* vnLexLR_Node.h */; };
+		B0434F3F1AEC9E9300565633 /* vnLexLR_Parser.h in Headers */ = {isa = PBXBuildFile; fileRef = B0434F371AEC9E9300565633 /* vnLexLR_Parser.h */; };
+		B0434F401AEC9E9300565633 /* vnLexLR_State.h in Headers */ = {isa = PBXBuildFile; fileRef = B0434F381AEC9E9300565633 /* vnLexLR_State.h */; };
+		B0434F411AEC9E9300565633 /* vnLexToken.h in Headers */ = {isa = PBXBuildFile; fileRef = B0434F391AEC9E9300565633 /* vnLexToken.h */; };
+		B0434F421AEC9E9300565633 /* vnVariableJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = B0434F3A1AEC9E9300565633 /* vnVariableJSON.h */; };
+		B0434F431AEC9E9300565633 /* vnVariableScript.h in Headers */ = {isa = PBXBuildFile; fileRef = B0434F3B1AEC9E9300565633 /* vnVariableScript.h */; };
+		B0434F6A1AEC9F7800565633 /* vnLexAnalizers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0434F451AEC9F0A00565633 /* vnLexAnalizers.cpp */; };
+		B0434F6B1AEC9F7800565633 /* vnLexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0434F461AEC9F0A00565633 /* vnLexer.cpp */; };
+		B0434F6C1AEC9F7800565633 /* vnLexLR_Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0434F471AEC9F0A00565633 /* vnLexLR_Node.cpp */; };
+		B0434F6D1AEC9F7800565633 /* vnLexLR_Parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0434F481AEC9F0A00565633 /* vnLexLR_Parser.cpp */; };
+		B0434F6E1AEC9F7800565633 /* vnLexToken.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0434F491AEC9F0A00565633 /* vnLexToken.cpp */; };
+		B0434F6F1AEC9F7800565633 /* vnVariableJSON.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0434F4A1AEC9F0A00565633 /* vnVariableJSON.cpp */; };
+		B0434F701AEC9F7800565633 /* vnVariableJSONProductions.h in Headers */ = {isa = PBXBuildFile; fileRef = B0434F4B1AEC9F0A00565633 /* vnVariableJSONProductions.h */; };
+		B0434F711AEC9F7800565633 /* vnVariableJSONStates.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B0434F4C1AEC9F0A00565633 /* vnVariableJSONStates.hpp */; };
+		B0434F721AEC9F7800565633 /* vnVariableScript.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0434F4D1AEC9F0A00565633 /* vnVariableScript.cpp */; };
+		B0434F731AEC9F7800565633 /* vnVariableScriptProductions.h in Headers */ = {isa = PBXBuildFile; fileRef = B0434F4E1AEC9F0A00565633 /* vnVariableScriptProductions.h */; };
+		B0434F741AEC9F7800565633 /* vnVariableScriptStates.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B0434F4F1AEC9F0A00565633 /* vnVariableScriptStates.hpp */; };
+		B0434F821AECA94D00565633 /* vnbase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B008F7891AEB9D1B000D5A04 /* vnbase.a */; };
+		B0434F831AECA94D00565633 /* vnlex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0434F5F1AEC9F4400565633 /* vnlex.a */; };
+		B0434F841AECA95500565633 /* vnLR_Builder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0434F761AECA90C00565633 /* vnLR_Builder.cpp */; };
+		B0451E841B5AC507003E5C3A /* vnReadWriteLockImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = B0451E831B5AC507003E5C3A /* vnReadWriteLockImpl.h */; };
+		B05033D91B257A5D009FB7CB /* vnPacketFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = B05033D81B257A5D009FB7CB /* vnPacketFactory.h */; };
+		B05033DB1B25855C009FB7CB /* vnPackingStream.h in Headers */ = {isa = PBXBuildFile; fileRef = B05033DA1B25855C009FB7CB /* vnPackingStream.h */; };
+		B05033DD1B2585B1009FB7CB /* vnPackingStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B05033DC1B2585B1009FB7CB /* vnPackingStream.cpp */; };
+		B05033DF1B258964009FB7CB /* vnUnpackingStream.h in Headers */ = {isa = PBXBuildFile; fileRef = B05033DE1B258964009FB7CB /* vnUnpackingStream.h */; };
+		B05033E11B258974009FB7CB /* vnUnpackingStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B05033E01B258974009FB7CB /* vnUnpackingStream.cpp */; };
+		B05FA5E11B242B620065B083 /* vnPacketScript.h in Headers */ = {isa = PBXBuildFile; fileRef = B05FA5E01B242B620065B083 /* vnPacketScript.h */; };
+		B05FA5E31B242B7E0065B083 /* vnPacketScript.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B05FA5E21B242B7E0065B083 /* vnPacketScript.cpp */; };
+		B05FA5F71B2433C20065B083 /* vnPktCoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B05FA5F61B2433C20065B083 /* vnPktCoder.cpp */; };
+		B05FA5F81B2433F30065B083 /* vnnet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0634B9E1AEF5CEA0087A795 /* vnnet.a */; };
+		B05FA5F91B2433F60065B083 /* vnlex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0434F5F1AEC9F4400565633 /* vnlex.a */; };
+		B05FA5FA1B2433F80065B083 /* vnbase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B008F7891AEB9D1B000D5A04 /* vnbase.a */; };
+		B0634B981AEE26BD0087A795 /* vnRunLoop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0634B971AEE26BD0087A795 /* vnRunLoop.cpp */; };
+		B0634BAD1AEF5EB50087A795 /* vnNetAddress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0634BAC1AEF5EB50087A795 /* vnNetAddress.cpp */; };
+		B0634BB01AEF60A50087A795 /* vnLinkBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0634BAF1AEF60A50087A795 /* vnLinkBuffer.cpp */; };
+		B0634BB31AEF6AF70087A795 /* vnLink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0634BB21AEF6AF70087A795 /* vnLink.cpp */; };
+		B06617791B4FB91B00DDD12D /* vnMySQLInputData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B06617781B4FB91B00DDD12D /* vnMySQLInputData.cpp */; };
+		B066177C1B4FCAF000DDD12D /* vnMySQLOutputData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B066177A1B4FCAF000DDD12D /* vnMySQLOutputData.cpp */; };
+		B066177D1B4FCAF000DDD12D /* vnMySQLOutputData.h in Headers */ = {isa = PBXBuildFile; fileRef = B066177B1B4FCAF000DDD12D /* vnMySQLOutputData.h */; };
+		B066D4211B7B34F700024CCA /* vnHttpRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B066D4201B7B34F700024CCA /* vnHttpRequest.cpp */; };
+		B066D4241B7B46AB00024CCA /* vnHttpRequestParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B066D4231B7B46AB00024CCA /* vnHttpRequestParser.cpp */; };
+		B066D4341B7B742C00024CCA /* vnHttpResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B066D4331B7B742C00024CCA /* vnHttpResponse.cpp */; };
+		B06B34131B5A3E4D00650740 /* vnReadWriteLock.h in Headers */ = {isa = PBXBuildFile; fileRef = B06B34121B5A3E4D00650740 /* vnReadWriteLock.h */; };
+		B06B34151B5A3E6600650740 /* vnReadWriteLock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B06B34141B5A3E6600650740 /* vnReadWriteLock.cpp */; };
+		B06EED2B1B7CC0DF00664458 /* vnHttpResponseParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B06EED2A1B7CC0DF00664458 /* vnHttpResponseParser.cpp */; };
+		B06EED2E1B7CC91A00664458 /* vnMD5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B06EED2D1B7CC91A00664458 /* vnMD5.cpp */; };
+		B093042C1B3EF17F00CEA515 /* vnName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B093042B1B3EF17F00CEA515 /* vnName.cpp */; };
+		B09304591B3F02CA00CEA515 /* vnCLikeScriptCompiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B09304581B3F02CA00CEA515 /* vnCLikeScriptCompiler.cpp */; };
+		B0942A331B4BF0FA002338C9 /* vnMySQLConnection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0942A321B4BF0FA002338C9 /* vnMySQLConnection.cpp */; };
+		B0942A371B4C19A4002338C9 /* vnMySQLStatement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0942A351B4C19A4002338C9 /* vnMySQLStatement.cpp */; };
+		B0942A3E1B4F97F3002338C9 /* vnMySQLInputData.h in Headers */ = {isa = PBXBuildFile; fileRef = B0942A3C1B4F97F3002338C9 /* vnMySQLInputData.h */; };
+		B099E53B1B2EF9D000F755E2 /* vnBase64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B099E53A1B2EF9D000F755E2 /* vnBase64.cpp */; };
+		B0CF36061B26C6F600EBD772 /* vnWorkQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0CF36051B26C6F600EBD772 /* vnWorkQueue.cpp */; };
+		B0D5A9C71B3E7B5E003B485C /* vnLexer2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0D5A9C61B3E7B5E003B485C /* vnLexer2.cpp */; };
+		B0D5A9CA1B3E9B3A003B485C /* vnLexer2Analizers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0D5A9C91B3E9B3A003B485C /* vnLexer2Analizers.cpp */; };
+		B0DDE20D1B32C143001A1E75 /* vnOpenSSL_Context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0DDE20B1B32C143001A1E75 /* vnOpenSSL_Context.cpp */; };
+		B0DDE20E1B32C143001A1E75 /* vnOpenSSL_Context.h in Headers */ = {isa = PBXBuildFile; fileRef = B0DDE20C1B32C143001A1E75 /* vnOpenSSL_Context.h */; };
+		B0DDE2121B32CE7B001A1E75 /* vnOpenSSL_BIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0DDE2111B32CE7B001A1E75 /* vnOpenSSL_BIO.cpp */; };
+		B0DDE2141B32DC14001A1E75 /* vnLinkSSL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0DDE2131B32DC14001A1E75 /* vnLinkSSL.cpp */; };
+		B0DE16CA1B28370400D9BA75 /* vnWorkPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0DE16C91B28370400D9BA75 /* vnWorkPool.cpp */; };
+		B0F44A441B43C7DA00E46569 /* vnCLikeScript_SyntaxTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F44A431B43C7DA00E46569 /* vnCLikeScript_SyntaxTree.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B0434F791AECA93000565633 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		B05FA5EC1B2433600065B083 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B008F7891AEB9D1B000D5A04 /* vnbase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = vnbase.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B008F7961AEB9D97000D5A04 /* vnDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnDefine.h; sourceTree = "<group>"; };
+		B008F7971AEB9D97000D5A04 /* vnFlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnFlatform.h; sourceTree = "<group>"; };
+		B008F79B1AEB9DA8000D5A04 /* vnAABox2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnAABox2.h; sourceTree = "<group>"; };
+		B008F79D1AEB9DA8000D5A04 /* vnAllocatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnAllocatedObject.h; sourceTree = "<group>"; };
+		B008F79E1AEB9DA8000D5A04 /* vnAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnAssert.h; sourceTree = "<group>"; };
+		B008F79F1AEB9DA8000D5A04 /* vnBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnBuffer.h; sourceTree = "<group>"; };
+		B008F7A01AEB9DA8000D5A04 /* vnColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnColor.h; sourceTree = "<group>"; };
+		B008F7A11AEB9DA8000D5A04 /* vnCommandList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnCommandList.h; sourceTree = "<group>"; };
+		B008F7A21AEB9DA8000D5A04 /* vnCompressedInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnCompressedInt.h; sourceTree = "<group>"; };
+		B008F7A31AEB9DA8000D5A04 /* vnDataStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnDataStream.h; sourceTree = "<group>"; };
+		B008F7A41AEB9DA8000D5A04 /* vnFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnFileManager.h; sourceTree = "<group>"; };
+		B008F7A51AEB9DA8000D5A04 /* vnFilePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnFilePath.h; sourceTree = "<group>"; };
+		B008F7A61AEB9DA8000D5A04 /* vnFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnFileSystem.h; sourceTree = "<group>"; };
+		B008F7A71AEB9DA8000D5A04 /* vnLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnLog.h; sourceTree = "<group>"; };
+		B008F7A81AEB9DA8000D5A04 /* vnMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnMath.h; sourceTree = "<group>"; };
+		B008F7A91AEB9DA8000D5A04 /* vnMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnMemory.h; sourceTree = "<group>"; };
+		B008F7AA1AEB9DA8000D5A04 /* vnMemoryPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnMemoryPool.h; sourceTree = "<group>"; };
+		B008F7AB1AEB9DA8000D5A04 /* vnMemoryTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnMemoryTracker.h; sourceTree = "<group>"; };
+		B008F7AC1AEB9DA8000D5A04 /* vnNonCopyable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnNonCopyable.h; sourceTree = "<group>"; };
+		B008F7AD1AEB9DA8000D5A04 /* vnRefCounted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnRefCounted.h; sourceTree = "<group>"; };
+		B008F7AE1AEB9DA8000D5A04 /* vnSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnSingleton.h; sourceTree = "<group>"; };
+		B008F7AF1AEB9DA8000D5A04 /* vnSingletonManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnSingletonManager.h; sourceTree = "<group>"; };
+		B008F7B01AEB9DA8000D5A04 /* vnSpinLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnSpinLock.h; sourceTree = "<group>"; };
+		B008F7B11AEB9DA8000D5A04 /* vnUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnUnicode.h; sourceTree = "<group>"; };
+		B008F7B21AEB9DA8000D5A04 /* vnVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnVariable.h; sourceTree = "<group>"; };
+		B008F7B31AEB9DA8000D5A04 /* vnVariableAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnVariableAccessor.h; sourceTree = "<group>"; };
+		B008F7B41AEB9DA8000D5A04 /* vnVector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnVector2.h; sourceTree = "<group>"; };
+		B008F7D21AEB9F4D000D5A04 /* vnFileSystemOS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vnFileSystemOS.hpp; sourceTree = "<group>"; };
+		B008F7D31AEB9F4D000D5A04 /* vnBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnBuffer.cpp; sourceTree = "<group>"; };
+		B008F7D41AEB9F4D000D5A04 /* vnColor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnColor.cpp; sourceTree = "<group>"; };
+		B008F7D51AEB9F4D000D5A04 /* vnCommandList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnCommandList.cpp; sourceTree = "<group>"; };
+		B008F7D61AEB9F4D000D5A04 /* vnCompressedInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnCompressedInt.cpp; sourceTree = "<group>"; };
+		B008F7D71AEB9F4D000D5A04 /* vnDataStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnDataStream.cpp; sourceTree = "<group>"; };
+		B008F7D81AEB9F4D000D5A04 /* vnFileManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnFileManager.cpp; sourceTree = "<group>"; };
+		B008F7D91AEB9F4D000D5A04 /* vnFilePath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnFilePath.cpp; sourceTree = "<group>"; };
+		B008F7DA1AEB9F4D000D5A04 /* vnFileSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnFileSystem.cpp; sourceTree = "<group>"; };
+		B008F7DB1AEB9F4D000D5A04 /* vnLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnLog.cpp; sourceTree = "<group>"; };
+		B008F7DC1AEB9F4D000D5A04 /* vnMemory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnMemory.cpp; sourceTree = "<group>"; };
+		B008F7DD1AEB9F4D000D5A04 /* vnMemoryTracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnMemoryTracker.cpp; sourceTree = "<group>"; };
+		B008F7DF1AEB9F4D000D5A04 /* vnSingletonManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnSingletonManager.cpp; sourceTree = "<group>"; };
+		B008F7E01AEB9F4D000D5A04 /* vnSpinLock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnSpinLock.cpp; sourceTree = "<group>"; };
+		B008F7E11AEB9F4D000D5A04 /* vnUnicode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnUnicode.cpp; sourceTree = "<group>"; };
+		B008F7E21AEB9F4D000D5A04 /* vnVariable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnVariable.cpp; sourceTree = "<group>"; };
+		B008F7F41AEBA361000D5A04 /* vnMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnMath.cpp; sourceTree = "<group>"; };
+		B011640F1B622038008FC7CA /* vnPktCoder_csharp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnPktCoder_csharp.cpp; sourceTree = "<group>"; };
+		B01FE2711B8086E1004F2B6D /* vnOpenSSL_Key.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnOpenSSL_Key.h; sourceTree = "<group>"; };
+		B01FE2721B808708004F2B6D /* vnOpenSSL_Key.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnOpenSSL_Key.cpp; sourceTree = "<group>"; };
+		B01FE2741B80927A004F2B6D /* vnOpenSSL_Signer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnOpenSSL_Signer.h; sourceTree = "<group>"; };
+		B01FE2771B80936B004F2B6D /* vnOpenSSL_Signer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnOpenSSL_Signer.cpp; sourceTree = "<group>"; };
+		B01FE2791B809685004F2B6D /* vnOpenSSL_Algorithms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnOpenSSL_Algorithms.h; sourceTree = "<group>"; };
+		B01FE27A1B80A388004F2B6D /* vnOpenSSL_Verifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnOpenSSL_Verifier.h; sourceTree = "<group>"; };
+		B01FE27B1B80A48E004F2B6D /* vnOpenSSL_Verifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnOpenSSL_Verifier.cpp; sourceTree = "<group>"; };
+		B0434F341AEC9E9300565633 /* vnLexAnalizers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnLexAnalizers.h; sourceTree = "<group>"; };
+		B0434F351AEC9E9300565633 /* vnLexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnLexer.h; sourceTree = "<group>"; };
+		B0434F361AEC9E9300565633 /* vnLexLR_Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnLexLR_Node.h; sourceTree = "<group>"; };
+		B0434F371AEC9E9300565633 /* vnLexLR_Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnLexLR_Parser.h; sourceTree = "<group>"; };
+		B0434F381AEC9E9300565633 /* vnLexLR_State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnLexLR_State.h; sourceTree = "<group>"; };
+		B0434F391AEC9E9300565633 /* vnLexToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnLexToken.h; sourceTree = "<group>"; };
+		B0434F3A1AEC9E9300565633 /* vnVariableJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnVariableJSON.h; sourceTree = "<group>"; };
+		B0434F3B1AEC9E9300565633 /* vnVariableScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnVariableScript.h; sourceTree = "<group>"; };
+		B0434F451AEC9F0A00565633 /* vnLexAnalizers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnLexAnalizers.cpp; sourceTree = "<group>"; };
+		B0434F461AEC9F0A00565633 /* vnLexer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnLexer.cpp; sourceTree = "<group>"; };
+		B0434F471AEC9F0A00565633 /* vnLexLR_Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnLexLR_Node.cpp; sourceTree = "<group>"; };
+		B0434F481AEC9F0A00565633 /* vnLexLR_Parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnLexLR_Parser.cpp; sourceTree = "<group>"; };
+		B0434F491AEC9F0A00565633 /* vnLexToken.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnLexToken.cpp; sourceTree = "<group>"; };
+		B0434F4A1AEC9F0A00565633 /* vnVariableJSON.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnVariableJSON.cpp; sourceTree = "<group>"; };
+		B0434F4B1AEC9F0A00565633 /* vnVariableJSONProductions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnVariableJSONProductions.h; sourceTree = "<group>"; };
+		B0434F4C1AEC9F0A00565633 /* vnVariableJSONStates.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vnVariableJSONStates.hpp; sourceTree = "<group>"; };
+		B0434F4D1AEC9F0A00565633 /* vnVariableScript.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnVariableScript.cpp; sourceTree = "<group>"; };
+		B0434F4E1AEC9F0A00565633 /* vnVariableScriptProductions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnVariableScriptProductions.h; sourceTree = "<group>"; };
+		B0434F4F1AEC9F0A00565633 /* vnVariableScriptStates.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vnVariableScriptStates.hpp; sourceTree = "<group>"; };
+		B0434F5F1AEC9F4400565633 /* vnlex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = vnlex.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0434F761AECA90C00565633 /* vnLR_Builder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vnLR_Builder.cpp; sourceTree = "<group>"; };
+		B0434F7B1AECA93000565633 /* vnlrbuilder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = vnlrbuilder; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0451E831B5AC507003E5C3A /* vnReadWriteLockImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnReadWriteLockImpl.h; sourceTree = "<group>"; };
+		B05033D81B257A5D009FB7CB /* vnPacketFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnPacketFactory.h; sourceTree = "<group>"; };
+		B05033DA1B25855C009FB7CB /* vnPackingStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnPackingStream.h; sourceTree = "<group>"; };
+		B05033DC1B2585B1009FB7CB /* vnPackingStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnPackingStream.cpp; sourceTree = "<group>"; };
+		B05033DE1B258964009FB7CB /* vnUnpackingStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnUnpackingStream.h; sourceTree = "<group>"; };
+		B05033E01B258974009FB7CB /* vnUnpackingStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnUnpackingStream.cpp; sourceTree = "<group>"; };
+		B05FA5DD1B2429A80065B083 /* vnPacketScriptProductions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnPacketScriptProductions.h; sourceTree = "<group>"; };
+		B05FA5DE1B2429A80065B083 /* vnPacketScriptStates.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = vnPacketScriptStates.hpp; sourceTree = "<group>"; };
+		B05FA5DF1B242A4C0065B083 /* vnPacket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnPacket.h; sourceTree = "<group>"; };
+		B05FA5E01B242B620065B083 /* vnPacketScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnPacketScript.h; sourceTree = "<group>"; };
+		B05FA5E21B242B7E0065B083 /* vnPacketScript.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnPacketScript.cpp; sourceTree = "<group>"; };
+		B05FA5EE1B2433600065B083 /* vnpktcoder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = vnpktcoder; sourceTree = BUILT_PRODUCTS_DIR; };
+		B05FA5F61B2433C20065B083 /* vnPktCoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnPktCoder.cpp; sourceTree = "<group>"; };
+		B0634B961AEE267E0087A795 /* vnRunLoop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnRunLoop.h; sourceTree = "<group>"; };
+		B0634B971AEE26BD0087A795 /* vnRunLoop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnRunLoop.cpp; sourceTree = "<group>"; };
+		B0634B9E1AEF5CEA0087A795 /* vnnet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = vnnet.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0634BAB1AEF5D670087A795 /* vnNetAddress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnNetAddress.h; sourceTree = "<group>"; };
+		B0634BAC1AEF5EB50087A795 /* vnNetAddress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnNetAddress.cpp; sourceTree = "<group>"; };
+		B0634BAE1AEF60880087A795 /* vnLinkBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnLinkBuffer.h; sourceTree = "<group>"; };
+		B0634BAF1AEF60A50087A795 /* vnLinkBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnLinkBuffer.cpp; sourceTree = "<group>"; };
+		B0634BB11AEF6AB50087A795 /* vnLink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnLink.h; sourceTree = "<group>"; };
+		B0634BB21AEF6AF70087A795 /* vnLink.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnLink.cpp; sourceTree = "<group>"; };
+		B06617781B4FB91B00DDD12D /* vnMySQLInputData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnMySQLInputData.cpp; sourceTree = "<group>"; };
+		B066177A1B4FCAF000DDD12D /* vnMySQLOutputData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnMySQLOutputData.cpp; sourceTree = "<group>"; };
+		B066177B1B4FCAF000DDD12D /* vnMySQLOutputData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnMySQLOutputData.h; sourceTree = "<group>"; };
+		B066D41F1B7B34CF00024CCA /* vnHttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnHttpRequest.h; sourceTree = "<group>"; };
+		B066D4201B7B34F700024CCA /* vnHttpRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnHttpRequest.cpp; sourceTree = "<group>"; };
+		B066D4221B7B469400024CCA /* vnHttpRequestParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnHttpRequestParser.h; sourceTree = "<group>"; };
+		B066D4231B7B46AB00024CCA /* vnHttpRequestParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnHttpRequestParser.cpp; sourceTree = "<group>"; };
+		B066D4321B7B741400024CCA /* vnHttpResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnHttpResponse.h; sourceTree = "<group>"; };
+		B066D4331B7B742C00024CCA /* vnHttpResponse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnHttpResponse.cpp; sourceTree = "<group>"; };
+		B06B34121B5A3E4D00650740 /* vnReadWriteLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnReadWriteLock.h; sourceTree = "<group>"; };
+		B06B34141B5A3E6600650740 /* vnReadWriteLock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnReadWriteLock.cpp; sourceTree = "<group>"; usesTabs = 0; };
+		B06EED291B7CC08E00664458 /* vnHttpResponseParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnHttpResponseParser.h; sourceTree = "<group>"; };
+		B06EED2A1B7CC0DF00664458 /* vnHttpResponseParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnHttpResponseParser.cpp; sourceTree = "<group>"; };
+		B06EED2C1B7CC7D300664458 /* vnMD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnMD5.h; sourceTree = "<group>"; };
+		B06EED2D1B7CC91A00664458 /* vnMD5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnMD5.cpp; sourceTree = "<group>"; };
+		B0757BBD1B31879E002EDF08 /* vnLinkSSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnLinkSSL.h; sourceTree = "<group>"; };
+		B093042A1B3EEFDE00CEA515 /* vnName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnName.h; sourceTree = "<group>"; };
+		B093042B1B3EF17F00CEA515 /* vnName.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnName.cpp; sourceTree = "<group>"; };
+		B09304551B3F010E00CEA515 /* vnCLikeScriptProductions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = vnCLikeScriptProductions.hpp; sourceTree = "<group>"; };
+		B09304561B3F010E00CEA515 /* vnCLikeScriptStates.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = vnCLikeScriptStates.hpp; sourceTree = "<group>"; };
+		B09304571B3F028300CEA515 /* vnCLikeScriptCompiler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnCLikeScriptCompiler.h; sourceTree = "<group>"; };
+		B09304581B3F02CA00CEA515 /* vnCLikeScriptCompiler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnCLikeScriptCompiler.cpp; sourceTree = "<group>"; };
+		B0942A2D1B4BEF15002338C9 /* vnmysqlconnector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = vnmysqlconnector.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0942A311B4BF0A2002338C9 /* vnMySQLConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnMySQLConnection.h; sourceTree = "<group>"; };
+		B0942A321B4BF0FA002338C9 /* vnMySQLConnection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnMySQLConnection.cpp; sourceTree = "<group>"; };
+		B0942A341B4C198D002338C9 /* vnMySQLStatement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnMySQLStatement.h; sourceTree = "<group>"; };
+		B0942A351B4C19A4002338C9 /* vnMySQLStatement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnMySQLStatement.cpp; sourceTree = "<group>"; };
+		B0942A391B4D18F0002338C9 /* vnMySQLData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnMySQLData.h; sourceTree = "<group>"; };
+		B0942A3C1B4F97F3002338C9 /* vnMySQLInputData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnMySQLInputData.h; sourceTree = "<group>"; };
+		B099E5391B2EF87D00F755E2 /* vnBase64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnBase64.h; sourceTree = "<group>"; };
+		B099E53A1B2EF9D000F755E2 /* vnBase64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnBase64.cpp; sourceTree = "<group>"; };
+		B0CF36041B26C6DA00EBD772 /* vnWorkQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnWorkQueue.h; sourceTree = "<group>"; };
+		B0CF36051B26C6F600EBD772 /* vnWorkQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnWorkQueue.cpp; sourceTree = "<group>"; };
+		B0D5A9C51B3E7AFF003B485C /* vnLexer2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnLexer2.h; sourceTree = "<group>"; };
+		B0D5A9C61B3E7B5E003B485C /* vnLexer2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnLexer2.cpp; sourceTree = "<group>"; };
+		B0D5A9C81B3E9B08003B485C /* vnLexer2Analizers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnLexer2Analizers.h; sourceTree = "<group>"; };
+		B0D5A9C91B3E9B3A003B485C /* vnLexer2Analizers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnLexer2Analizers.cpp; sourceTree = "<group>"; };
+		B0D8FE571B32B5B100FBD363 /* vnnetssl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = vnnetssl.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0D8FE661B32BBA400FBD363 /* vnOpenSSL_BIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnOpenSSL_BIO.h; sourceTree = "<group>"; };
+		B0DDE20B1B32C143001A1E75 /* vnOpenSSL_Context.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnOpenSSL_Context.cpp; sourceTree = "<group>"; };
+		B0DDE20C1B32C143001A1E75 /* vnOpenSSL_Context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnOpenSSL_Context.h; sourceTree = "<group>"; };
+		B0DDE2111B32CE7B001A1E75 /* vnOpenSSL_BIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnOpenSSL_BIO.cpp; sourceTree = "<group>"; };
+		B0DDE2131B32DC14001A1E75 /* vnLinkSSL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnLinkSSL.cpp; sourceTree = "<group>"; };
+		B0DE16C81B2836F100D9BA75 /* vnWorkPool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnWorkPool.h; sourceTree = "<group>"; };
+		B0DE16C91B28370400D9BA75 /* vnWorkPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnWorkPool.cpp; sourceTree = "<group>"; };
+		B0F44A421B43C78200E46569 /* vnCLikeScript_SyntaxTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnCLikeScript_SyntaxTree.h; sourceTree = "<group>"; };
+		B0F44A431B43C7DA00E46569 /* vnCLikeScript_SyntaxTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vnCLikeScript_SyntaxTree.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B008F7861AEB9D1B000D5A04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0434F5C1AEC9F4400565633 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0434F781AECA93000565633 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0434F831AECA94D00565633 /* vnlex.a in Frameworks */,
+				B0434F821AECA94D00565633 /* vnbase.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B05FA5EB1B2433600065B083 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B05FA5F81B2433F30065B083 /* vnnet.a in Frameworks */,
+				B05FA5F91B2433F60065B083 /* vnlex.a in Frameworks */,
+				B05FA5FA1B2433F80065B083 /* vnbase.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0634B9B1AEF5CEA0087A795 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0942A2A1B4BEF15002338C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0D8FE541B32B5B100FBD363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B008F77E1AEB9BA3000D5A04 = {
+			isa = PBXGroup;
+			children = (
+				B008F7951AEB9D7A000D5A04 /* Include */,
+				B008F7CF1AEB9E27000D5A04 /* Source */,
+				B008F78A1AEB9D1B000D5A04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B008F78A1AEB9D1B000D5A04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B008F7891AEB9D1B000D5A04 /* vnbase.a */,
+				B0434F5F1AEC9F4400565633 /* vnlex.a */,
+				B0434F7B1AECA93000565633 /* vnlrbuilder */,
+				B0634B9E1AEF5CEA0087A795 /* vnnet.a */,
+				B05FA5EE1B2433600065B083 /* vnpktcoder */,
+				B0D8FE571B32B5B100FBD363 /* vnnetssl.a */,
+				B0942A2D1B4BEF15002338C9 /* vnmysqlconnector.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B008F7951AEB9D7A000D5A04 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				B008F79A1AEB9DA8000D5A04 /* base */,
+				B0434F331AEC9E9300565633 /* lex */,
+				B0942A271B4BEEBD002338C9 /* mysql_connector */,
+				B0634BA91AEF5D280087A795 /* net */,
+				B0757BBC1B318724002EDF08 /* net_ssl */,
+				B008F7961AEB9D97000D5A04 /* vnDefine.h */,
+				B008F7971AEB9D97000D5A04 /* vnFlatform.h */,
+			);
+			name = Include;
+			path = ../../inc;
+			sourceTree = "<group>";
+		};
+		B008F79A1AEB9DA8000D5A04 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				B008F79B1AEB9DA8000D5A04 /* vnAABox2.h */,
+				B008F79D1AEB9DA8000D5A04 /* vnAllocatedObject.h */,
+				B008F79E1AEB9DA8000D5A04 /* vnAssert.h */,
+				B099E5391B2EF87D00F755E2 /* vnBase64.h */,
+				B008F79F1AEB9DA8000D5A04 /* vnBuffer.h */,
+				B008F7A01AEB9DA8000D5A04 /* vnColor.h */,
+				B008F7A11AEB9DA8000D5A04 /* vnCommandList.h */,
+				B008F7A21AEB9DA8000D5A04 /* vnCompressedInt.h */,
+				B008F7A31AEB9DA8000D5A04 /* vnDataStream.h */,
+				B008F7A41AEB9DA8000D5A04 /* vnFileManager.h */,
+				B008F7A51AEB9DA8000D5A04 /* vnFilePath.h */,
+				B008F7A61AEB9DA8000D5A04 /* vnFileSystem.h */,
+				B008F7A71AEB9DA8000D5A04 /* vnLog.h */,
+				B008F7A81AEB9DA8000D5A04 /* vnMath.h */,
+				B06EED2C1B7CC7D300664458 /* vnMD5.h */,
+				B008F7A91AEB9DA8000D5A04 /* vnMemory.h */,
+				B008F7AA1AEB9DA8000D5A04 /* vnMemoryPool.h */,
+				B008F7AB1AEB9DA8000D5A04 /* vnMemoryTracker.h */,
+				B093042A1B3EEFDE00CEA515 /* vnName.h */,
+				B008F7AC1AEB9DA8000D5A04 /* vnNonCopyable.h */,
+				B008F7AD1AEB9DA8000D5A04 /* vnRefCounted.h */,
+				B0634B961AEE267E0087A795 /* vnRunLoop.h */,
+				B008F7AE1AEB9DA8000D5A04 /* vnSingleton.h */,
+				B008F7AF1AEB9DA8000D5A04 /* vnSingletonManager.h */,
+				B008F7B01AEB9DA8000D5A04 /* vnSpinLock.h */,
+				B008F7B11AEB9DA8000D5A04 /* vnUnicode.h */,
+				B008F7B21AEB9DA8000D5A04 /* vnVariable.h */,
+				B008F7B31AEB9DA8000D5A04 /* vnVariableAccessor.h */,
+				B008F7B41AEB9DA8000D5A04 /* vnVector2.h */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		B008F7CF1AEB9E27000D5A04 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B008F7D01AEB9F4D000D5A04 /* base */,
+				B0434F441AEC9F0A00565633 /* lex */,
+				B0434F751AECA90C00565633 /* lrbuilder */,
+				B0942A281B4BEEF0002338C9 /* mysql_connector */,
+				B0634BAA1AEF5D540087A795 /* net */,
+				B0D8FE521B32B16900FBD363 /* net_ssl */,
+				B05FA5F51B2433C20065B083 /* pktcoder */,
+			);
+			name = Source;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+		B008F7D01AEB9F4D000D5A04 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				B008F7D11AEB9F4D000D5A04 /* posix */,
+				B099E53A1B2EF9D000F755E2 /* vnBase64.cpp */,
+				B008F7D31AEB9F4D000D5A04 /* vnBuffer.cpp */,
+				B008F7D41AEB9F4D000D5A04 /* vnColor.cpp */,
+				B008F7D51AEB9F4D000D5A04 /* vnCommandList.cpp */,
+				B008F7D61AEB9F4D000D5A04 /* vnCompressedInt.cpp */,
+				B008F7D71AEB9F4D000D5A04 /* vnDataStream.cpp */,
+				B008F7D81AEB9F4D000D5A04 /* vnFileManager.cpp */,
+				B008F7D91AEB9F4D000D5A04 /* vnFilePath.cpp */,
+				B008F7DA1AEB9F4D000D5A04 /* vnFileSystem.cpp */,
+				B008F7DB1AEB9F4D000D5A04 /* vnLog.cpp */,
+				B008F7F41AEBA361000D5A04 /* vnMath.cpp */,
+				B06EED2D1B7CC91A00664458 /* vnMD5.cpp */,
+				B008F7DC1AEB9F4D000D5A04 /* vnMemory.cpp */,
+				B008F7DD1AEB9F4D000D5A04 /* vnMemoryTracker.cpp */,
+				B093042B1B3EF17F00CEA515 /* vnName.cpp */,
+				B0634B971AEE26BD0087A795 /* vnRunLoop.cpp */,
+				B008F7DF1AEB9F4D000D5A04 /* vnSingletonManager.cpp */,
+				B008F7E01AEB9F4D000D5A04 /* vnSpinLock.cpp */,
+				B008F7E11AEB9F4D000D5A04 /* vnUnicode.cpp */,
+				B008F7E21AEB9F4D000D5A04 /* vnVariable.cpp */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		B008F7D11AEB9F4D000D5A04 /* posix */ = {
+			isa = PBXGroup;
+			children = (
+				B008F7D21AEB9F4D000D5A04 /* vnFileSystemOS.hpp */,
+			);
+			path = posix;
+			sourceTree = "<group>";
+		};
+		B0434F331AEC9E9300565633 /* lex */ = {
+			isa = PBXGroup;
+			children = (
+				B0F44A421B43C78200E46569 /* vnCLikeScript_SyntaxTree.h */,
+				B09304571B3F028300CEA515 /* vnCLikeScriptCompiler.h */,
+				B0434F341AEC9E9300565633 /* vnLexAnalizers.h */,
+				B0434F351AEC9E9300565633 /* vnLexer.h */,
+				B0D5A9C51B3E7AFF003B485C /* vnLexer2.h */,
+				B0D5A9C81B3E9B08003B485C /* vnLexer2Analizers.h */,
+				B0434F361AEC9E9300565633 /* vnLexLR_Node.h */,
+				B0434F371AEC9E9300565633 /* vnLexLR_Parser.h */,
+				B0434F381AEC9E9300565633 /* vnLexLR_State.h */,
+				B0434F391AEC9E9300565633 /* vnLexToken.h */,
+				B0434F3A1AEC9E9300565633 /* vnVariableJSON.h */,
+				B0434F3B1AEC9E9300565633 /* vnVariableScript.h */,
+			);
+			path = lex;
+			sourceTree = "<group>";
+		};
+		B0434F441AEC9F0A00565633 /* lex */ = {
+			isa = PBXGroup;
+			children = (
+				B09304551B3F010E00CEA515 /* vnCLikeScriptProductions.hpp */,
+				B09304561B3F010E00CEA515 /* vnCLikeScriptStates.hpp */,
+				B0434F451AEC9F0A00565633 /* vnLexAnalizers.cpp */,
+				B0434F461AEC9F0A00565633 /* vnLexer.cpp */,
+				B0D5A9C61B3E7B5E003B485C /* vnLexer2.cpp */,
+				B0D5A9C91B3E9B3A003B485C /* vnLexer2Analizers.cpp */,
+				B0434F471AEC9F0A00565633 /* vnLexLR_Node.cpp */,
+				B0434F481AEC9F0A00565633 /* vnLexLR_Parser.cpp */,
+				B0434F491AEC9F0A00565633 /* vnLexToken.cpp */,
+				B0434F4A1AEC9F0A00565633 /* vnVariableJSON.cpp */,
+				B0434F4B1AEC9F0A00565633 /* vnVariableJSONProductions.h */,
+				B0434F4C1AEC9F0A00565633 /* vnVariableJSONStates.hpp */,
+				B0434F4D1AEC9F0A00565633 /* vnVariableScript.cpp */,
+				B0434F4E1AEC9F0A00565633 /* vnVariableScriptProductions.h */,
+				B0434F4F1AEC9F0A00565633 /* vnVariableScriptStates.hpp */,
+				B09304581B3F02CA00CEA515 /* vnCLikeScriptCompiler.cpp */,
+				B0F44A431B43C7DA00E46569 /* vnCLikeScript_SyntaxTree.cpp */,
+			);
+			path = lex;
+			sourceTree = "<group>";
+		};
+		B0434F751AECA90C00565633 /* lrbuilder */ = {
+			isa = PBXGroup;
+			children = (
+				B0434F761AECA90C00565633 /* vnLR_Builder.cpp */,
+			);
+			path = lrbuilder;
+			sourceTree = "<group>";
+		};
+		B0451E821B5AC507003E5C3A /* pthread */ = {
+			isa = PBXGroup;
+			children = (
+				B0451E831B5AC507003E5C3A /* vnReadWriteLockImpl.h */,
+			);
+			path = pthread;
+			sourceTree = "<group>";
+		};
+		B05FA5F51B2433C20065B083 /* pktcoder */ = {
+			isa = PBXGroup;
+			children = (
+				B05FA5F61B2433C20065B083 /* vnPktCoder.cpp */,
+				B011640F1B622038008FC7CA /* vnPktCoder_csharp.cpp */,
+			);
+			path = pktcoder;
+			sourceTree = "<group>";
+		};
+		B0634BA91AEF5D280087A795 /* net */ = {
+			isa = PBXGroup;
+			children = (
+				B066D41F1B7B34CF00024CCA /* vnHttpRequest.h */,
+				B066D4221B7B469400024CCA /* vnHttpRequestParser.h */,
+				B066D4321B7B741400024CCA /* vnHttpResponse.h */,
+				B06EED291B7CC08E00664458 /* vnHttpResponseParser.h */,
+				B0634BB11AEF6AB50087A795 /* vnLink.h */,
+				B0634BAE1AEF60880087A795 /* vnLinkBuffer.h */,
+				B0634BAB1AEF5D670087A795 /* vnNetAddress.h */,
+				B05FA5DF1B242A4C0065B083 /* vnPacket.h */,
+				B05033D81B257A5D009FB7CB /* vnPacketFactory.h */,
+				B05FA5E01B242B620065B083 /* vnPacketScript.h */,
+				B05033DA1B25855C009FB7CB /* vnPackingStream.h */,
+				B06B34121B5A3E4D00650740 /* vnReadWriteLock.h */,
+				B05033DE1B258964009FB7CB /* vnUnpackingStream.h */,
+				B0DE16C81B2836F100D9BA75 /* vnWorkPool.h */,
+				B0CF36041B26C6DA00EBD772 /* vnWorkQueue.h */,
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
+		B0634BAA1AEF5D540087A795 /* net */ = {
+			isa = PBXGroup;
+			children = (
+				B0451E821B5AC507003E5C3A /* pthread */,
+				B066D4201B7B34F700024CCA /* vnHttpRequest.cpp */,
+				B066D4231B7B46AB00024CCA /* vnHttpRequestParser.cpp */,
+				B066D4331B7B742C00024CCA /* vnHttpResponse.cpp */,
+				B06EED2A1B7CC0DF00664458 /* vnHttpResponseParser.cpp */,
+				B0634BB21AEF6AF70087A795 /* vnLink.cpp */,
+				B0634BAF1AEF60A50087A795 /* vnLinkBuffer.cpp */,
+				B0634BAC1AEF5EB50087A795 /* vnNetAddress.cpp */,
+				B05FA5E21B242B7E0065B083 /* vnPacketScript.cpp */,
+				B05FA5DD1B2429A80065B083 /* vnPacketScriptProductions.h */,
+				B05FA5DE1B2429A80065B083 /* vnPacketScriptStates.hpp */,
+				B05033DC1B2585B1009FB7CB /* vnPackingStream.cpp */,
+				B06B34141B5A3E6600650740 /* vnReadWriteLock.cpp */,
+				B05033E01B258974009FB7CB /* vnUnpackingStream.cpp */,
+				B0DE16C91B28370400D9BA75 /* vnWorkPool.cpp */,
+				B0CF36051B26C6F600EBD772 /* vnWorkQueue.cpp */,
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
+		B0757BBC1B318724002EDF08 /* net_ssl */ = {
+			isa = PBXGroup;
+			children = (
+				B0757BBD1B31879E002EDF08 /* vnLinkSSL.h */,
+				B01FE2791B809685004F2B6D /* vnOpenSSL_Algorithms.h */,
+				B0D8FE661B32BBA400FBD363 /* vnOpenSSL_BIO.h */,
+				B01FE2711B8086E1004F2B6D /* vnOpenSSL_Key.h */,
+				B01FE2741B80927A004F2B6D /* vnOpenSSL_Signer.h */,
+				B01FE27A1B80A388004F2B6D /* vnOpenSSL_Verifier.h */,
+			);
+			path = net_ssl;
+			sourceTree = "<group>";
+		};
+		B0942A271B4BEEBD002338C9 /* mysql_connector */ = {
+			isa = PBXGroup;
+			children = (
+				B0942A311B4BF0A2002338C9 /* vnMySQLConnection.h */,
+				B0942A341B4C198D002338C9 /* vnMySQLStatement.h */,
+				B0942A391B4D18F0002338C9 /* vnMySQLData.h */,
+			);
+			path = mysql_connector;
+			sourceTree = "<group>";
+		};
+		B0942A281B4BEEF0002338C9 /* mysql_connector */ = {
+			isa = PBXGroup;
+			children = (
+				B0942A321B4BF0FA002338C9 /* vnMySQLConnection.cpp */,
+				B0942A351B4C19A4002338C9 /* vnMySQLStatement.cpp */,
+				B0942A3C1B4F97F3002338C9 /* vnMySQLInputData.h */,
+				B06617781B4FB91B00DDD12D /* vnMySQLInputData.cpp */,
+				B066177A1B4FCAF000DDD12D /* vnMySQLOutputData.cpp */,
+				B066177B1B4FCAF000DDD12D /* vnMySQLOutputData.h */,
+			);
+			path = mysql_connector;
+			sourceTree = "<group>";
+		};
+		B0D8FE521B32B16900FBD363 /* net_ssl */ = {
+			isa = PBXGroup;
+			children = (
+				B0DDE2131B32DC14001A1E75 /* vnLinkSSL.cpp */,
+				B0DDE2111B32CE7B001A1E75 /* vnOpenSSL_BIO.cpp */,
+				B0DDE20B1B32C143001A1E75 /* vnOpenSSL_Context.cpp */,
+				B0DDE20C1B32C143001A1E75 /* vnOpenSSL_Context.h */,
+				B01FE2721B808708004F2B6D /* vnOpenSSL_Key.cpp */,
+				B01FE2771B80936B004F2B6D /* vnOpenSSL_Signer.cpp */,
+				B01FE27B1B80A48E004F2B6D /* vnOpenSSL_Verifier.cpp */,
+			);
+			path = net_ssl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B008F7871AEB9D1B000D5A04 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0434F3C1AEC9E9300565633 /* vnLexAnalizers.h in Headers */,
+				B05FA5E11B242B620065B083 /* vnPacketScript.h in Headers */,
+				B008F7CB1AEB9DA8000D5A04 /* vnUnicode.h in Headers */,
+				B008F7C81AEB9DA8000D5A04 /* vnSingleton.h in Headers */,
+				B008F7CE1AEB9DA8000D5A04 /* vnVector2.h in Headers */,
+				B008F7B51AEB9DA8000D5A04 /* vnAABox2.h in Headers */,
+				B008F7981AEB9D97000D5A04 /* vnDefine.h in Headers */,
+				B008F7BB1AEB9DA8000D5A04 /* vnCommandList.h in Headers */,
+				B008F7C61AEB9DA8000D5A04 /* vnNonCopyable.h in Headers */,
+				B008F7CD1AEB9DA8000D5A04 /* vnVariableAccessor.h in Headers */,
+				B05033DB1B25855C009FB7CB /* vnPackingStream.h in Headers */,
+				B008F7BA1AEB9DA8000D5A04 /* vnColor.h in Headers */,
+				B008F7C71AEB9DA8000D5A04 /* vnRefCounted.h in Headers */,
+				B008F7BE1AEB9DA8000D5A04 /* vnFileManager.h in Headers */,
+				B05033D91B257A5D009FB7CB /* vnPacketFactory.h in Headers */,
+				B008F7E31AEB9F4D000D5A04 /* vnFileSystemOS.hpp in Headers */,
+				B0434F3D1AEC9E9300565633 /* vnLexer.h in Headers */,
+				B008F7C31AEB9DA8000D5A04 /* vnMemory.h in Headers */,
+				B0434F421AEC9E9300565633 /* vnVariableJSON.h in Headers */,
+				B008F7B81AEB9DA8000D5A04 /* vnAssert.h in Headers */,
+				B008F7C11AEB9DA8000D5A04 /* vnLog.h in Headers */,
+				B008F7B91AEB9DA8000D5A04 /* vnBuffer.h in Headers */,
+				B0434F411AEC9E9300565633 /* vnLexToken.h in Headers */,
+				B008F7C01AEB9DA8000D5A04 /* vnFileSystem.h in Headers */,
+				B008F7CC1AEB9DA8000D5A04 /* vnVariable.h in Headers */,
+				B008F7C91AEB9DA8000D5A04 /* vnSingletonManager.h in Headers */,
+				B0434F401AEC9E9300565633 /* vnLexLR_State.h in Headers */,
+				B008F7BF1AEB9DA8000D5A04 /* vnFilePath.h in Headers */,
+				B0434F3E1AEC9E9300565633 /* vnLexLR_Node.h in Headers */,
+				B008F7C41AEB9DA8000D5A04 /* vnMemoryPool.h in Headers */,
+				B008F7BD1AEB9DA8000D5A04 /* vnDataStream.h in Headers */,
+				B008F7CA1AEB9DA8000D5A04 /* vnSpinLock.h in Headers */,
+				B008F7C21AEB9DA8000D5A04 /* vnMath.h in Headers */,
+				B008F7B71AEB9DA8000D5A04 /* vnAllocatedObject.h in Headers */,
+				B0434F431AEC9E9300565633 /* vnVariableScript.h in Headers */,
+				B008F7991AEB9D97000D5A04 /* vnFlatform.h in Headers */,
+				B0434F3F1AEC9E9300565633 /* vnLexLR_Parser.h in Headers */,
+				B008F7BC1AEB9DA8000D5A04 /* vnCompressedInt.h in Headers */,
+				B008F7C51AEB9DA8000D5A04 /* vnMemoryTracker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0434F5D1AEC9F4400565633 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0434F731AEC9F7800565633 /* vnVariableScriptProductions.h in Headers */,
+				B0434F711AEC9F7800565633 /* vnVariableJSONStates.hpp in Headers */,
+				B0434F701AEC9F7800565633 /* vnVariableJSONProductions.h in Headers */,
+				B0434F741AEC9F7800565633 /* vnVariableScriptStates.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0634B9C1AEF5CEA0087A795 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06B34131B5A3E4D00650740 /* vnReadWriteLock.h in Headers */,
+				B0451E841B5AC507003E5C3A /* vnReadWriteLockImpl.h in Headers */,
+				B05033DF1B258964009FB7CB /* vnUnpackingStream.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0942A2B1B4BEF15002338C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B066177D1B4FCAF000DDD12D /* vnMySQLOutputData.h in Headers */,
+				B0942A3E1B4F97F3002338C9 /* vnMySQLInputData.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0D8FE551B32B5B100FBD363 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0DDE20E1B32C143001A1E75 /* vnOpenSSL_Context.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B008F7881AEB9D1B000D5A04 /* vnbase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B008F7941AEB9D1B000D5A04 /* Build configuration list for PBXNativeTarget "vnbase" */;
+			buildPhases = (
+				B008F7851AEB9D1B000D5A04 /* Sources */,
+				B008F7861AEB9D1B000D5A04 /* Frameworks */,
+				B008F7871AEB9D1B000D5A04 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vnbase;
+			productName = vnbase;
+			productReference = B008F7891AEB9D1B000D5A04 /* vnbase.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B0434F5E1AEC9F4400565633 /* vnlex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0434F671AEC9F4400565633 /* Build configuration list for PBXNativeTarget "vnlex" */;
+			buildPhases = (
+				B0434F5B1AEC9F4400565633 /* Sources */,
+				B0434F5C1AEC9F4400565633 /* Frameworks */,
+				B0434F5D1AEC9F4400565633 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vnlex;
+			productName = vnlex;
+			productReference = B0434F5F1AEC9F4400565633 /* vnlex.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B0434F7A1AECA93000565633 /* vnlrbuilder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0434F7F1AECA93000565633 /* Build configuration list for PBXNativeTarget "vnlrbuilder" */;
+			buildPhases = (
+				B0434F771AECA93000565633 /* Sources */,
+				B0434F781AECA93000565633 /* Frameworks */,
+				B0434F791AECA93000565633 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vnlrbuilder;
+			productName = vnlrbuilder;
+			productReference = B0434F7B1AECA93000565633 /* vnlrbuilder */;
+			productType = "com.apple.product-type.tool";
+		};
+		B05FA5ED1B2433600065B083 /* vnpktcoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B05FA5F21B2433600065B083 /* Build configuration list for PBXNativeTarget "vnpktcoder" */;
+			buildPhases = (
+				B05FA5EA1B2433600065B083 /* Sources */,
+				B05FA5EB1B2433600065B083 /* Frameworks */,
+				B05FA5EC1B2433600065B083 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vnpktcoder;
+			productName = vnpktcoder;
+			productReference = B05FA5EE1B2433600065B083 /* vnpktcoder */;
+			productType = "com.apple.product-type.tool";
+		};
+		B0634B9D1AEF5CEA0087A795 /* vnnet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0634BA81AEF5CEA0087A795 /* Build configuration list for PBXNativeTarget "vnnet" */;
+			buildPhases = (
+				B0634B9A1AEF5CEA0087A795 /* Sources */,
+				B0634B9B1AEF5CEA0087A795 /* Frameworks */,
+				B0634B9C1AEF5CEA0087A795 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vnnet;
+			productName = net;
+			productReference = B0634B9E1AEF5CEA0087A795 /* vnnet.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B0942A2C1B4BEF15002338C9 /* vnmysqlconnector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0942A2E1B4BEF15002338C9 /* Build configuration list for PBXNativeTarget "vnmysqlconnector" */;
+			buildPhases = (
+				B0942A291B4BEF15002338C9 /* Sources */,
+				B0942A2A1B4BEF15002338C9 /* Frameworks */,
+				B0942A2B1B4BEF15002338C9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vnmysqlconnector;
+			productName = vnmysqlconnector;
+			productReference = B0942A2D1B4BEF15002338C9 /* vnmysqlconnector.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B0D8FE561B32B5B100FBD363 /* vnnetssl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0D8FE5F1B32B5B100FBD363 /* Build configuration list for PBXNativeTarget "vnnetssl" */;
+			buildPhases = (
+				B0D8FE531B32B5B100FBD363 /* Sources */,
+				B0D8FE541B32B5B100FBD363 /* Frameworks */,
+				B0D8FE551B32B5B100FBD363 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vnnetssl;
+			productName = vnnetssl;
+			productReference = B0D8FE571B32B5B100FBD363 /* vnnetssl.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B008F77F1AEB9BA3000D5A04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = viichi.com;
+				TargetAttributes = {
+					B008F7881AEB9D1B000D5A04 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					B0434F5E1AEC9F4400565633 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					B0434F7A1AECA93000565633 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					B05FA5ED1B2433600065B083 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					B0634B9D1AEF5CEA0087A795 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					B0942A2C1B4BEF15002338C9 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					B0D8FE561B32B5B100FBD363 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = B008F7821AEB9BA3000D5A04 /* Build configuration list for PBXProject "vnlib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B008F77E1AEB9BA3000D5A04;
+			productRefGroup = B008F78A1AEB9D1B000D5A04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B008F7881AEB9D1B000D5A04 /* vnbase */,
+				B0434F5E1AEC9F4400565633 /* vnlex */,
+				B0434F7A1AECA93000565633 /* vnlrbuilder */,
+				B0634B9D1AEF5CEA0087A795 /* vnnet */,
+				B05FA5ED1B2433600065B083 /* vnpktcoder */,
+				B0D8FE561B32B5B100FBD363 /* vnnetssl */,
+				B0942A2C1B4BEF15002338C9 /* vnmysqlconnector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B008F7851AEB9D1B000D5A04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B008F7E81AEB9F4D000D5A04 /* vnDataStream.cpp in Sources */,
+				B008F7E91AEB9F4D000D5A04 /* vnFileManager.cpp in Sources */,
+				B008F7EB1AEB9F4D000D5A04 /* vnFileSystem.cpp in Sources */,
+				B008F7E71AEB9F4D000D5A04 /* vnCompressedInt.cpp in Sources */,
+				B099E53B1B2EF9D000F755E2 /* vnBase64.cpp in Sources */,
+				B008F7F11AEB9F4D000D5A04 /* vnSpinLock.cpp in Sources */,
+				B008F7F21AEB9F4D000D5A04 /* vnUnicode.cpp in Sources */,
+				B008F7ED1AEB9F4D000D5A04 /* vnMemory.cpp in Sources */,
+				B093042C1B3EF17F00CEA515 /* vnName.cpp in Sources */,
+				B008F7EE1AEB9F4D000D5A04 /* vnMemoryTracker.cpp in Sources */,
+				B008F7EC1AEB9F4D000D5A04 /* vnLog.cpp in Sources */,
+				B008F7F31AEB9F4D000D5A04 /* vnVariable.cpp in Sources */,
+				B0634B981AEE26BD0087A795 /* vnRunLoop.cpp in Sources */,
+				B06EED2E1B7CC91A00664458 /* vnMD5.cpp in Sources */,
+				B008F7E41AEB9F4D000D5A04 /* vnBuffer.cpp in Sources */,
+				B008F7E51AEB9F4D000D5A04 /* vnColor.cpp in Sources */,
+				B008F7F01AEB9F4D000D5A04 /* vnSingletonManager.cpp in Sources */,
+				B05FA5E31B242B7E0065B083 /* vnPacketScript.cpp in Sources */,
+				B008F7E61AEB9F4D000D5A04 /* vnCommandList.cpp in Sources */,
+				B008F7EA1AEB9F4D000D5A04 /* vnFilePath.cpp in Sources */,
+				B008F7F51AEBA361000D5A04 /* vnMath.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0434F5B1AEC9F4400565633 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0434F6C1AEC9F7800565633 /* vnLexLR_Node.cpp in Sources */,
+				B0434F6B1AEC9F7800565633 /* vnLexer.cpp in Sources */,
+				B0434F6E1AEC9F7800565633 /* vnLexToken.cpp in Sources */,
+				B0D5A9C71B3E7B5E003B485C /* vnLexer2.cpp in Sources */,
+				B09304591B3F02CA00CEA515 /* vnCLikeScriptCompiler.cpp in Sources */,
+				B0434F6F1AEC9F7800565633 /* vnVariableJSON.cpp in Sources */,
+				B0434F6D1AEC9F7800565633 /* vnLexLR_Parser.cpp in Sources */,
+				B0D5A9CA1B3E9B3A003B485C /* vnLexer2Analizers.cpp in Sources */,
+				B0F44A441B43C7DA00E46569 /* vnCLikeScript_SyntaxTree.cpp in Sources */,
+				B0434F6A1AEC9F7800565633 /* vnLexAnalizers.cpp in Sources */,
+				B0434F721AEC9F7800565633 /* vnVariableScript.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0434F771AECA93000565633 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0434F841AECA95500565633 /* vnLR_Builder.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B05FA5EA1B2433600065B083 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B01164101B622038008FC7CA /* vnPktCoder_csharp.cpp in Sources */,
+				B05FA5F71B2433C20065B083 /* vnPktCoder.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0634B9A1AEF5CEA0087A795 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06B34151B5A3E6600650740 /* vnReadWriteLock.cpp in Sources */,
+				B0CF36061B26C6F600EBD772 /* vnWorkQueue.cpp in Sources */,
+				B0634BB31AEF6AF70087A795 /* vnLink.cpp in Sources */,
+				B066D4341B7B742C00024CCA /* vnHttpResponse.cpp in Sources */,
+				B05033DD1B2585B1009FB7CB /* vnPackingStream.cpp in Sources */,
+				B066D4211B7B34F700024CCA /* vnHttpRequest.cpp in Sources */,
+				B0634BAD1AEF5EB50087A795 /* vnNetAddress.cpp in Sources */,
+				B066D4241B7B46AB00024CCA /* vnHttpRequestParser.cpp in Sources */,
+				B05033E11B258974009FB7CB /* vnUnpackingStream.cpp in Sources */,
+				B06EED2B1B7CC0DF00664458 /* vnHttpResponseParser.cpp in Sources */,
+				B0634BB01AEF60A50087A795 /* vnLinkBuffer.cpp in Sources */,
+				B0DE16CA1B28370400D9BA75 /* vnWorkPool.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0942A291B4BEF15002338C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06617791B4FB91B00DDD12D /* vnMySQLInputData.cpp in Sources */,
+				B0942A371B4C19A4002338C9 /* vnMySQLStatement.cpp in Sources */,
+				B0942A331B4BF0FA002338C9 /* vnMySQLConnection.cpp in Sources */,
+				B066177C1B4FCAF000DDD12D /* vnMySQLOutputData.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0D8FE531B32B5B100FBD363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B01FE2781B80936B004F2B6D /* vnOpenSSL_Signer.cpp in Sources */,
+				B0DDE2141B32DC14001A1E75 /* vnLinkSSL.cpp in Sources */,
+				B01FE27C1B80A48E004F2B6D /* vnOpenSSL_Verifier.cpp in Sources */,
+				B0DDE20D1B32C143001A1E75 /* vnOpenSSL_Context.cpp in Sources */,
+				B01FE2731B808708004F2B6D /* vnOpenSSL_Key.cpp in Sources */,
+				B0DDE2121B32CE7B001A1E75 /* vnOpenSSL_BIO.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B008F7831AEB9BA3000D5A04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "../../bin/osx/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		B008F7841AEB9BA3000D5A04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "../../bin/osx/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+			};
+			name = Release;
+		};
+		B008F7921AEB9D1B000D5A04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B008F7931AEB9D1B000D5A04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B0434F681AEC9F4400565633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B0434F691AEC9F4400565633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B0434F801AECA93000565633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B0434F811AECA93000565633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B05FA5F31B2433600065B083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B05FA5F41B2433600065B083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B0634BA61AEF5CEA0087A795 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B0634BA71AEF5CEA0087A795 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B0942A2F1B4BEF15002338C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/mysql/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B0942A301B4BEF15002338C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/mysql/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B0D8FE601B32B5B100FBD363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/openssl/include;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B0D8FE611B32B5B100FBD363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/openssl/include;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B008F7821AEB9BA3000D5A04 /* Build configuration list for PBXProject "vnlib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B008F7831AEB9BA3000D5A04 /* Debug */,
+				B008F7841AEB9BA3000D5A04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B008F7941AEB9D1B000D5A04 /* Build configuration list for PBXNativeTarget "vnbase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B008F7921AEB9D1B000D5A04 /* Debug */,
+				B008F7931AEB9D1B000D5A04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0434F671AEC9F4400565633 /* Build configuration list for PBXNativeTarget "vnlex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0434F681AEC9F4400565633 /* Debug */,
+				B0434F691AEC9F4400565633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0434F7F1AECA93000565633 /* Build configuration list for PBXNativeTarget "vnlrbuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0434F801AECA93000565633 /* Debug */,
+				B0434F811AECA93000565633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B05FA5F21B2433600065B083 /* Build configuration list for PBXNativeTarget "vnpktcoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B05FA5F31B2433600065B083 /* Debug */,
+				B05FA5F41B2433600065B083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0634BA81AEF5CEA0087A795 /* Build configuration list for PBXNativeTarget "vnnet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0634BA61AEF5CEA0087A795 /* Debug */,
+				B0634BA71AEF5CEA0087A795 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0942A2E1B4BEF15002338C9 /* Build configuration list for PBXNativeTarget "vnmysqlconnector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0942A2F1B4BEF15002338C9 /* Debug */,
+				B0942A301B4BEF15002338C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0D8FE5F1B32B5B100FBD363 /* Build configuration list for PBXNativeTarget "vnnetssl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0D8FE601B32B5B100FBD363 /* Debug */,
+				B0D8FE611B32B5B100FBD363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B008F77F1AEB9BA3000D5A04 /* Project object */;
+}

@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0013F5B1B57BD5E007FE25B /* LogPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0013F541B57BD5E007FE25B /* LogPrinter.cpp */; };
+		B0013F5C1B57BD5E007FE25B /* ServerApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0013F561B57BD5E007FE25B /* ServerApp.cpp */; };
+		B0013F5F1B57BE28007FE25B /* DemoServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0013F5D1B57BE28007FE25B /* DemoServer.cpp */; };
+		B0013F601B57C359007FE25B /* vnbase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0013F411B57BD02007FE25B /* vnbase.a */; };
+		B0013F611B57C35C007FE25B /* vnnet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0013F471B57BD02007FE25B /* vnnet.a */; };
+		B0013F621B57C35F007FE25B /* vnlex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0013F431B57BD02007FE25B /* vnlex.a */; };
+		B0013F631B57C367007FE25B /* vnmysqlconnector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0013F4D1B57BD02007FE25B /* vnmysqlconnector.a */; };
+		B0013F661B57D625007FE25B /* PublicListen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0013F641B57D625007FE25B /* PublicListen.cpp */; };
+		B0013F691B57D8A1007FE25B /* PublicLink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0013F671B57D8A1007FE25B /* PublicLink.cpp */; };
+		B0013F6C1B57D9CC007FE25B /* LinkManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0013F6A1B57D9CC007FE25B /* LinkManager.cpp */; };
+		B01127741B5E7A2F00A0300A /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B01127721B5E7A2F00A0300A /* GameObject.cpp */; };
+		B011277E1B5E7A6B00A0300A /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B011277C1B5E7A6B00A0300A /* Game.cpp */; };
+		B01127841B5E7D7400A0300A /* GameEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B01127821B5E7D7400A0300A /* GameEntity.cpp */; };
+		B01127871B5E7EA200A0300A /* GameStaticEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B01127851B5E7EA200A0300A /* GameStaticEntity.cpp */; };
+		B011278A1B5E804000A0300A /* GameDynamicEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B01127881B5E804000A0300A /* GameDynamicEntity.cpp */; };
+		B011278D1B5E80C800A0300A /* GameTank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B011278B1B5E80C800A0300A /* GameTank.cpp */; };
+		B06B34181B5A3FCA00650740 /* RoomManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B06B34161B5A3FCA00650740 /* RoomManager.cpp */; };
+		B06B34221B5A401700650740 /* Room.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B06B34201B5A401700650740 /* Room.cpp */; };
+		B0CABE851B627B71008F1E32 /* GameBullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0CABE831B627B71008F1E32 /* GameBullet.cpp */; };
+		B0D7B9D11B5F6FEA004C98C9 /* GameCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0D7B9CF1B5F6FEA004C98C9 /* GameCommon.cpp */; };
+		B0D7B9DB1B5F8427004C98C9 /* GamePlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0D7B9D91B5F8427004C98C9 /* GamePlayer.cpp */; };
+		B0FECD811B58CEF30068E1B6 /* DBManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0FECD7F1B58CEF30068E1B6 /* DBManager.cpp */; };
+		B0FECD831B58DE7F0068E1B6 /* libmysqlclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FECD821B58DE7F0068E1B6 /* libmysqlclient.a */; };
+		B0FECD861B58E8AC0068E1B6 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0FECD841B58E8AC0068E1B6 /* Player.cpp */; };
+		B0FECD891B58FC410068E1B6 /* PlayerManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0FECD871B58FC410068E1B6 /* PlayerManager.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0013F401B57BD02007FE25B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0013F361B57BD02007FE25B /* vnlib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B008F7891AEB9D1B000D5A04;
+			remoteInfo = vnbase;
+		};
+		B0013F421B57BD02007FE25B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0013F361B57BD02007FE25B /* vnlib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B0434F5F1AEC9F4400565633;
+			remoteInfo = vnlex;
+		};
+		B0013F441B57BD02007FE25B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0013F361B57BD02007FE25B /* vnlib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B0434F7B1AECA93000565633;
+			remoteInfo = vnlrbuilder;
+		};
+		B0013F461B57BD02007FE25B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0013F361B57BD02007FE25B /* vnlib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B0634B9E1AEF5CEA0087A795;
+			remoteInfo = vnnet;
+		};
+		B0013F481B57BD02007FE25B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0013F361B57BD02007FE25B /* vnlib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B05FA5EE1B2433600065B083;
+			remoteInfo = vnpktcoder;
+		};
+		B0013F4A1B57BD02007FE25B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0013F361B57BD02007FE25B /* vnlib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B0D8FE571B32B5B100FBD363;
+			remoteInfo = vnnetssl;
+		};
+		B0013F4C1B57BD02007FE25B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0013F361B57BD02007FE25B /* vnlib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B0942A2D1B4BEF15002338C9;
+			remoteInfo = vnmysqlconnector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B0013F2A1B57BC6B007FE25B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B0013F2C1B57BC6B007FE25B /* demo_svr */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = demo_svr; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0013F361B57BD02007FE25B /* vnlib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = vnlib.xcodeproj; path = ../../../vnlib2/prj/osx/vnlib.xcodeproj; sourceTree = "<group>"; };
+		B0013F541B57BD5E007FE25B /* LogPrinter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogPrinter.cpp; sourceTree = "<group>"; };
+		B0013F551B57BD5E007FE25B /* LogPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogPrinter.h; sourceTree = "<group>"; };
+		B0013F561B57BD5E007FE25B /* ServerApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ServerApp.cpp; sourceTree = "<group>"; };
+		B0013F571B57BD5E007FE25B /* ServerApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerApp.h; sourceTree = "<group>"; };
+		B0013F591B57BD5E007FE25B /* demo.pkt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = demo.pkt; sourceTree = "<group>"; };
+		B0013F5D1B57BE28007FE25B /* DemoServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DemoServer.cpp; sourceTree = "<group>"; };
+		B0013F5E1B57BE28007FE25B /* DemoServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoServer.h; sourceTree = "<group>"; };
+		B0013F641B57D625007FE25B /* PublicListen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PublicListen.cpp; sourceTree = "<group>"; };
+		B0013F651B57D625007FE25B /* PublicListen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicListen.h; sourceTree = "<group>"; };
+		B0013F671B57D8A1007FE25B /* PublicLink.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PublicLink.cpp; sourceTree = "<group>"; };
+		B0013F681B57D8A1007FE25B /* PublicLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicLink.h; sourceTree = "<group>"; };
+		B0013F6A1B57D9CC007FE25B /* LinkManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinkManager.cpp; sourceTree = "<group>"; };
+		B0013F6B1B57D9CC007FE25B /* LinkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkManager.h; sourceTree = "<group>"; };
+		B01127721B5E7A2F00A0300A /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
+		B01127731B5E7A2F00A0300A /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		B011277C1B5E7A6B00A0300A /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		B011277D1B5E7A6B00A0300A /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		B01127821B5E7D7400A0300A /* GameEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameEntity.cpp; sourceTree = "<group>"; };
+		B01127831B5E7D7400A0300A /* GameEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEntity.h; sourceTree = "<group>"; };
+		B01127851B5E7EA200A0300A /* GameStaticEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameStaticEntity.cpp; sourceTree = "<group>"; };
+		B01127861B5E7EA200A0300A /* GameStaticEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStaticEntity.h; sourceTree = "<group>"; };
+		B01127881B5E804000A0300A /* GameDynamicEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameDynamicEntity.cpp; sourceTree = "<group>"; };
+		B01127891B5E804000A0300A /* GameDynamicEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDynamicEntity.h; sourceTree = "<group>"; };
+		B011278B1B5E80C800A0300A /* GameTank.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameTank.cpp; sourceTree = "<group>"; };
+		B011278C1B5E80C800A0300A /* GameTank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTank.h; sourceTree = "<group>"; };
+		B06B34161B5A3FCA00650740 /* RoomManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RoomManager.cpp; sourceTree = "<group>"; };
+		B06B34171B5A3FCA00650740 /* RoomManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomManager.h; sourceTree = "<group>"; };
+		B06B34201B5A401700650740 /* Room.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Room.cpp; sourceTree = "<group>"; };
+		B06B34211B5A401700650740 /* Room.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Room.h; sourceTree = "<group>"; };
+		B0CABE831B627B71008F1E32 /* GameBullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameBullet.cpp; sourceTree = "<group>"; };
+		B0CABE841B627B71008F1E32 /* GameBullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBullet.h; sourceTree = "<group>"; };
+		B0D7B9CF1B5F6FEA004C98C9 /* GameCommon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameCommon.cpp; sourceTree = "<group>"; };
+		B0D7B9D01B5F6FEA004C98C9 /* GameCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCommon.h; sourceTree = "<group>"; };
+		B0D7B9D91B5F8427004C98C9 /* GamePlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamePlayer.cpp; sourceTree = "<group>"; };
+		B0D7B9DA1B5F8427004C98C9 /* GamePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePlayer.h; sourceTree = "<group>"; };
+		B0FECD761B58CDD60068E1B6 /* AsyncObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncObject.h; sourceTree = "<group>"; };
+		B0FECD7F1B58CEF30068E1B6 /* DBManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DBManager.cpp; sourceTree = "<group>"; };
+		B0FECD801B58CEF30068E1B6 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		B0FECD821B58DE7F0068E1B6 /* libmysqlclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmysqlclient.a; path = /usr/local/mysql/lib/libmysqlclient.a; sourceTree = "<absolute>"; };
+		B0FECD841B58E8AC0068E1B6 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		B0FECD851B58E8AC0068E1B6 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		B0FECD871B58FC410068E1B6 /* PlayerManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerManager.cpp; sourceTree = "<group>"; };
+		B0FECD881B58FC410068E1B6 /* PlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerManager.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0013F291B57BC6B007FE25B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0FECD831B58DE7F0068E1B6 /* libmysqlclient.a in Frameworks */,
+				B0013F631B57C367007FE25B /* vnmysqlconnector.a in Frameworks */,
+				B0013F611B57C35C007FE25B /* vnnet.a in Frameworks */,
+				B0013F621B57C35F007FE25B /* vnlex.a in Frameworks */,
+				B0013F601B57C359007FE25B /* vnbase.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0013F231B57BC6B007FE25B = {
+			isa = PBXGroup;
+			children = (
+				B0013F511B57BD47007FE25B /* Source */,
+				B0013F4E1B57BD0E007FE25B /* Libraries */,
+				B0013F2D1B57BC6B007FE25B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0013F2D1B57BC6B007FE25B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0013F2C1B57BC6B007FE25B /* demo_svr */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0013F371B57BD02007FE25B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0013F411B57BD02007FE25B /* vnbase.a */,
+				B0013F431B57BD02007FE25B /* vnlex.a */,
+				B0013F451B57BD02007FE25B /* vnlrbuilder */,
+				B0013F471B57BD02007FE25B /* vnnet.a */,
+				B0013F491B57BD02007FE25B /* vnpktcoder */,
+				B0013F4B1B57BD02007FE25B /* vnnetssl.a */,
+				B0013F4D1B57BD02007FE25B /* vnmysqlconnector.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0013F4E1B57BD0E007FE25B /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B0FECD821B58DE7F0068E1B6 /* libmysqlclient.a */,
+				B0013F361B57BD02007FE25B /* vnlib.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		B0013F511B57BD47007FE25B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B0013F531B57BD5E007FE25B /* common */,
+				B0013F581B57BD5E007FE25B /* protocols */,
+				B0013F5A1B57BD5E007FE25B /* server */,
+			);
+			name = Source;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+		B0013F531B57BD5E007FE25B /* common */ = {
+			isa = PBXGroup;
+			children = (
+				B0013F541B57BD5E007FE25B /* LogPrinter.cpp */,
+				B0013F551B57BD5E007FE25B /* LogPrinter.h */,
+				B0013F561B57BD5E007FE25B /* ServerApp.cpp */,
+				B0013F571B57BD5E007FE25B /* ServerApp.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		B0013F581B57BD5E007FE25B /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B0013F591B57BD5E007FE25B /* demo.pkt */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		B0013F5A1B57BD5E007FE25B /* server */ = {
+			isa = PBXGroup;
+			children = (
+				B0FECD761B58CDD60068E1B6 /* AsyncObject.h */,
+				B0FECD7F1B58CEF30068E1B6 /* DBManager.cpp */,
+				B0FECD801B58CEF30068E1B6 /* DBManager.h */,
+				B0013F5D1B57BE28007FE25B /* DemoServer.cpp */,
+				B0013F5E1B57BE28007FE25B /* DemoServer.h */,
+				B011277C1B5E7A6B00A0300A /* Game.cpp */,
+				B011277D1B5E7A6B00A0300A /* Game.h */,
+				B0CABE831B627B71008F1E32 /* GameBullet.cpp */,
+				B0CABE841B627B71008F1E32 /* GameBullet.h */,
+				B0D7B9CF1B5F6FEA004C98C9 /* GameCommon.cpp */,
+				B0D7B9D01B5F6FEA004C98C9 /* GameCommon.h */,
+				B01127881B5E804000A0300A /* GameDynamicEntity.cpp */,
+				B01127891B5E804000A0300A /* GameDynamicEntity.h */,
+				B01127821B5E7D7400A0300A /* GameEntity.cpp */,
+				B01127831B5E7D7400A0300A /* GameEntity.h */,
+				B01127721B5E7A2F00A0300A /* GameObject.cpp */,
+				B01127731B5E7A2F00A0300A /* GameObject.h */,
+				B0D7B9D91B5F8427004C98C9 /* GamePlayer.cpp */,
+				B0D7B9DA1B5F8427004C98C9 /* GamePlayer.h */,
+				B01127851B5E7EA200A0300A /* GameStaticEntity.cpp */,
+				B01127861B5E7EA200A0300A /* GameStaticEntity.h */,
+				B011278B1B5E80C800A0300A /* GameTank.cpp */,
+				B011278C1B5E80C800A0300A /* GameTank.h */,
+				B0013F6A1B57D9CC007FE25B /* LinkManager.cpp */,
+				B0013F6B1B57D9CC007FE25B /* LinkManager.h */,
+				B0FECD841B58E8AC0068E1B6 /* Player.cpp */,
+				B0FECD851B58E8AC0068E1B6 /* Player.h */,
+				B0FECD871B58FC410068E1B6 /* PlayerManager.cpp */,
+				B0FECD881B58FC410068E1B6 /* PlayerManager.h */,
+				B0013F671B57D8A1007FE25B /* PublicLink.cpp */,
+				B0013F681B57D8A1007FE25B /* PublicLink.h */,
+				B0013F641B57D625007FE25B /* PublicListen.cpp */,
+				B0013F651B57D625007FE25B /* PublicListen.h */,
+				B06B34201B5A401700650740 /* Room.cpp */,
+				B06B34211B5A401700650740 /* Room.h */,
+				B06B34161B5A3FCA00650740 /* RoomManager.cpp */,
+				B06B34171B5A3FCA00650740 /* RoomManager.h */,
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0013F2B1B57BC6B007FE25B /* demo_svr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0013F331B57BC6B007FE25B /* Build configuration list for PBXNativeTarget "demo_svr" */;
+			buildPhases = (
+				B0013F281B57BC6B007FE25B /* Sources */,
+				B0013F291B57BC6B007FE25B /* Frameworks */,
+				B0013F2A1B57BC6B007FE25B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = demo_svr;
+			productName = demo_svr;
+			productReference = B0013F2C1B57BC6B007FE25B /* demo_svr */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0013F241B57BC6B007FE25B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = viichi.com;
+				TargetAttributes = {
+					B0013F2B1B57BC6B007FE25B = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = B0013F271B57BC6B007FE25B /* Build configuration list for PBXProject "demo_svr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B0013F231B57BC6B007FE25B;
+			productRefGroup = B0013F2D1B57BC6B007FE25B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B0013F371B57BD02007FE25B /* Products */;
+					ProjectRef = B0013F361B57BD02007FE25B /* vnlib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				B0013F2B1B57BC6B007FE25B /* demo_svr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B0013F411B57BD02007FE25B /* vnbase.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = vnbase.a;
+			remoteRef = B0013F401B57BD02007FE25B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0013F431B57BD02007FE25B /* vnlex.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = vnlex.a;
+			remoteRef = B0013F421B57BD02007FE25B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0013F451B57BD02007FE25B /* vnlrbuilder */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = vnlrbuilder;
+			remoteRef = B0013F441B57BD02007FE25B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0013F471B57BD02007FE25B /* vnnet.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = vnnet.a;
+			remoteRef = B0013F461B57BD02007FE25B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0013F491B57BD02007FE25B /* vnpktcoder */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = vnpktcoder;
+			remoteRef = B0013F481B57BD02007FE25B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0013F4B1B57BD02007FE25B /* vnnetssl.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = vnnetssl.a;
+			remoteRef = B0013F4A1B57BD02007FE25B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0013F4D1B57BD02007FE25B /* vnmysqlconnector.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = vnmysqlconnector.a;
+			remoteRef = B0013F4C1B57BD02007FE25B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0013F281B57BC6B007FE25B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0FECD861B58E8AC0068E1B6 /* Player.cpp in Sources */,
+				B0FECD891B58FC410068E1B6 /* PlayerManager.cpp in Sources */,
+				B011278A1B5E804000A0300A /* GameDynamicEntity.cpp in Sources */,
+				B01127871B5E7EA200A0300A /* GameStaticEntity.cpp in Sources */,
+				B0FECD811B58CEF30068E1B6 /* DBManager.cpp in Sources */,
+				B011278D1B5E80C800A0300A /* GameTank.cpp in Sources */,
+				B0D7B9D11B5F6FEA004C98C9 /* GameCommon.cpp in Sources */,
+				B0013F5C1B57BD5E007FE25B /* ServerApp.cpp in Sources */,
+				B01127841B5E7D7400A0300A /* GameEntity.cpp in Sources */,
+				B06B34221B5A401700650740 /* Room.cpp in Sources */,
+				B0D7B9DB1B5F8427004C98C9 /* GamePlayer.cpp in Sources */,
+				B0013F5F1B57BE28007FE25B /* DemoServer.cpp in Sources */,
+				B0013F5B1B57BD5E007FE25B /* LogPrinter.cpp in Sources */,
+				B0CABE851B627B71008F1E32 /* GameBullet.cpp in Sources */,
+				B011277E1B5E7A6B00A0300A /* Game.cpp in Sources */,
+				B0013F691B57D8A1007FE25B /* PublicLink.cpp in Sources */,
+				B01127741B5E7A2F00A0300A /* GameObject.cpp in Sources */,
+				B0013F661B57D625007FE25B /* PublicListen.cpp in Sources */,
+				B06B34181B5A3FCA00650740 /* RoomManager.cpp in Sources */,
+				B0013F6C1B57D9CC007FE25B /* LinkManager.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B0013F311B57BC6B007FE25B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../../../vnlib2/inc/base ../../../vnlib2/inc/lex ../../../vnlib2/inc/net ../../../vnlib2/inc/mysql_connector";
+			};
+			name = Debug;
+		};
+		B0013F321B57BC6B007FE25B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../../../vnlib2/inc/base ../../../vnlib2/inc/lex ../../../vnlib2/inc/net ../../../vnlib2/inc/mysql_connector";
+			};
+			name = Release;
+		};
+		B0013F341B57BC6B007FE25B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/mysql/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B0013F351B57BC6B007FE25B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/mysql/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0013F271B57BC6B007FE25B /* Build configuration list for PBXProject "demo_svr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0013F311B57BC6B007FE25B /* Debug */,
+				B0013F321B57BC6B007FE25B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0013F331B57BC6B007FE25B /* Build configuration list for PBXNativeTarget "demo_svr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0013F341B57BC6B007FE25B /* Debug */,
+				B0013F351B57BC6B007FE25B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0013F241B57BC6B007FE25B /* Project object */;
+}

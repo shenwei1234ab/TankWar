@@ -1,0 +1,280 @@
+
+
+packet<10> {
+	string ppId;
+	string ppToken
+} req_login;
+
+
+packet<11> res_loginOk;
+packet<12> res_loginFailed;
+
+packet<13> res_loginAnother;
+
+//---------------------------
+
+packet<20> req_getPlayerBaseInfo;
+
+packet<21> {
+    string playerName;
+    bool inRoom;
+} res_playerBaseInfo;
+
+//---------------------------
+
+packet<30> {
+    string playerName;
+} req_setPlayerName;
+
+packet<31> res_setPlayerNameOk;
+packet<32> res_setPlayerNameFailed;
+
+//--------------------------
+
+packet<40> req_exitRoom;
+
+packet<41> res_exitRoomOk;
+packet<42> res_exitRoomFailed;
+
+
+//--------------------------
+
+packet<50> {
+	string roomName;
+} req_enterRoom;
+
+struct RoomSeatInfo {
+	u8 seat;
+	string playerName;
+};
+
+packet<51> {
+	u8 seat;
+	vector<RoomSeatInfo> players;
+} res_enterRoomOk;
+
+packet<52> res_enterRoomFailed;
+
+
+//---------------------------
+
+packet<60> req_startGame;
+packet<61> res_startGameFailed;
+
+packet<62, uint> req_tankMove;
+packet<63> req_tankStop;
+
+packet<64, uint> req_tankCommonAttack;
+packet<67, uint> req_tankPowerAttack;
+
+packet<65> req_backGame;
+packet<66> res_backGameFailed;
+
+//---------------------------
+
+struct GameTank {
+    uint objectId;
+    f32 positionX;
+    f32 positionY;
+    uint direction;
+    f32 speed;
+};
+
+struct GamePlayer {
+	uint seat;
+	GameTank tank;
+};
+
+struct GameBullet {
+	uint objectId;
+	uint ownerId;
+	f32 positionX, positionY;
+	uint direction;
+	f32 speed;
+};
+
+struct CWall{
+	uint objectId;
+	f32 positionX;
+    f32 positionY;
+};
+
+struct CProtectMask{
+	uint objectId;
+	uint ownerId;
+	f32 positionX, positionY;
+};
+
+
+struct CRiver{	
+	uint objectId;	
+	f32 positionX;    
+	f32 positionY;
+};
+
+struct CGrass{	
+	uint objectId;	
+	f32 positionX;    
+	f32 positionY;
+};
+struct CProperty{	
+	string propertyName;	
+	uint objectId;	
+	f32 positionX;	
+	f32 positionY;
+};
+
+packet<312> {	
+	CProperty property;
+} res_createProperty
+
+packet<313> {	
+	uint tankId;	
+	CProperty property; 
+} res_getProperty
+
+
+
+struct Game {
+	f32 timeStamp;
+	vector<GamePlayer> players;
+	vector<GameBullet> bullets;
+	vector<CWall> walls;
+	vector<CProtectMask> protectmasks;
+	vector<CRiver> rivers;
+	vector<CGrass> grasses;
+	vector<CProperty> properties;
+};
+
+//---------------------------
+
+packet<201> {
+	u8 seat;
+} res_playerExitRoom;
+
+packet<202, RoomSeatInfo> res_playerEnterRoom;
+
+packet<203, Game> res_gameStart;
+struct PlayerRank
+{
+    uint seat;
+    uint scores;
+};
+struct Rank
+{
+    vector<PlayerRank> ranks;
+};
+packet<204,Rank> res_gameEnd;
+
+packet<205> {
+	uint objectId;
+	f32 positionX;
+	f32 positionY;
+	uint direction;
+} res_tankMove;
+
+packet<206> {
+	uint objectId;
+	f32 positionX;
+	f32 positionY;
+} res_tankStop;
+
+packet<207> {
+    uint tankId;
+    f32 tankPosX;
+    f32 tankPosY;
+    uint bulletId;
+    f32 bulletPosX;
+    f32 bulletPosY;
+    uint direction;
+    f32 speed;
+} res_tankCommonAttack;
+
+ 
+packet<217> {    
+	uint tankId;    
+	f32 tankPosX;    
+	f32 tankPosY;    
+	uint bulletId;    
+	f32 bulletPosX;    
+	f32 bulletPosY;    
+	uint direction;    
+	f32 speed;
+} res_tankPowerAttack;
+
+
+packet<208> {
+	uint objectId;
+} res_bulletOutOfMap;
+
+packet<209> {
+	uint objectId;
+	uint bulletId;
+	f32 positionX;
+	f32 positionY;
+} res_bulletCollideBullet
+
+packet<210> {
+	uint objectId;
+	uint entityId;
+	f32 positionX;
+	f32 positionY;
+} res_bulletCollideEntity
+
+
+packet<211> {
+	u8 seat;
+	vector<RoomSeatInfo> players;
+	Game game;
+} res_gameBack;
+
+packet<212, f32> res_gameTimeStamp;
+
+
+packet<300> {	
+	uint objectId;
+} res_destoryObject
+
+
+
+packet<310> {
+	uint objectId;
+	uint maskId;
+	f32 positionX;
+	f32 positionY;
+} res_bulletCollideMask
+
+
+packet<311> {	
+	uint bulletId;	
+	uint tankId;	
+	uint score;	
+	uint hp;
+} res_bulletCollideTank
+
+
+
+
+
+packet<400> {
+	uint bulletId;
+	uint objectId;
+} res_bulletdestoryObject
+
+//---------------------------
+
+packet<1000> req_createDemoRoom;
+
+packet<1001> res_createDemoRoomOk;
+packet<1002> res_createDemoRoomFailed;
+
+
+packet<1010> req_endDemoGame;
+
+
+
+
+
+
+
+

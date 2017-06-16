@@ -1,0 +1,2 @@
+FILE(GLOB VN_BASE_SRC ${CMAKE_CURRENT_LIST_DIR}/../../src/base/*.cpp)
+ADD_LIBRARY(vnbase STATIC ${VN_BASE_SRC})

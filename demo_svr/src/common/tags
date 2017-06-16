@@ -1,0 +1,58 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DECL_SERVER_APP	ServerApp.h	61;"	d
+IMPL_SERVER_APP	ServerApp.h	65;"	d
+LogPrinterFile	LogPrinter.cpp	/^LogPrinterFile::LogPrinterFile(str8 path)$/;"	f	class:LogPrinterFile	signature:(str8 path)
+LogPrinterFile	LogPrinter.h	/^    LogPrinterFile(str8 path);$/;"	p	class:LogPrinterFile	access:public	signature:(str8 path)
+LogPrinterFile	LogPrinter.h	/^class LogPrinterFile : public LogPrinter {$/;"	c	inherits:LogPrinter
+LogPrinterFile::LogPrinterFile	LogPrinter.cpp	/^LogPrinterFile::LogPrinterFile(str8 path)$/;"	f	class:LogPrinterFile	signature:(str8 path)
+LogPrinterFile::LogPrinterFile	LogPrinter.h	/^    LogPrinterFile(str8 path);$/;"	p	class:LogPrinterFile	access:public	signature:(str8 path)
+LogPrinterFile::m_path	LogPrinter.h	/^    str8 m_path;$/;"	m	class:LogPrinterFile	access:protected
+LogPrinterFile::print	LogPrinter.cpp	/^void LogPrinterFile::print(Log::Level l, const c8 *, int, str8 &&s) {$/;"	f	class:LogPrinterFile	signature:(Log::Level l, const c8 *, int, str8 &&s)
+LogPrinterFile::print	LogPrinter.h	/^    virtual void print(Log::Level, const c8 *, int, str8 &&);$/;"	p	class:LogPrinterFile	access:public	signature:(Log::Level, const c8 *, int, str8 &&)
+ServerApp	ServerApp.h	/^class ServerApp : public Singleton<ServerApp, ServerAppCreator> {$/;"	c	inherits:Singleton
+ServerApp::finalize	ServerApp.h	/^    virtual void finalize() = 0;$/;"	p	class:ServerApp	access:public	signature:()
+ServerApp::initialize	ServerApp.h	/^    virtual bool initialize(int argc, const char *argv[]) = 0;$/;"	p	class:ServerApp	access:public	signature:(int argc, const char *argv[])
+ServerApp::m_mainLoop	ServerApp.h	/^    RunLoop m_mainLoop;$/;"	m	class:ServerApp	access:protected
+ServerApp::main	ServerApp.h	/^    int main(int argc, const char *argv[]);$/;"	p	class:ServerApp	access:public	signature:(int argc, const char *argv[])
+ServerApp::post	ServerApp.h	/^    void post(std::function<void()> fn);$/;"	p	class:ServerApp	access:public	signature:(std::function<void()> fn)
+ServerApp::quit	ServerApp.h	/^    void quit();$/;"	p	class:ServerApp	access:public	signature:()
+ServerApp::update	ServerApp.h	/^    virtual void update(f32 deltaTime) {} \/\/ seconds.$/;"	f	class:ServerApp	access:public	signature:(f32 deltaTime)
+ServerApp::~ServerApp	ServerApp.cpp	/^ServerApp::~ServerApp() {$/;"	f	class:ServerApp	signature:()
+ServerApp::~ServerApp	ServerApp.h	/^    virtual ~ServerApp();$/;"	p	class:ServerApp	access:public	signature:()
+ServerAppCreator	ServerApp.h	/^struct ServerAppCreator {$/;"	s
+ServerAppCreator::create	ServerApp.cpp	/^ServerApp * ServerAppCreator::create() {$/;"	f	class:ServerAppCreator	signature:()
+ServerAppCreator::create	ServerApp.h	/^    static ServerApp * create();$/;"	p	struct:ServerAppCreator	access:public	signature:()
+ServerAppCreator::destroy	ServerApp.cpp	/^void ServerAppCreator::destroy(ServerApp *p) {$/;"	f	class:ServerAppCreator	signature:(ServerApp *p)
+ServerAppCreator::destroy	ServerApp.h	/^    static void destroy(ServerApp *p);$/;"	p	struct:ServerAppCreator	access:public	signature:(ServerApp *p)
+ServerAppCreator::pfn	ServerApp.h	/^    static ServerApp * (*&pfn())();$/;"	p	struct:ServerAppCreator	access:public	signature:()
+__passport_svr__LogPrinter__	LogPrinter.h	10;"	d
+__passport_svr__ServerApp__	ServerApp.h	10;"	d
+create	ServerApp.cpp	/^ServerApp * ServerAppCreator::create() {$/;"	f	class:ServerAppCreator	signature:()
+create	ServerApp.h	/^    static ServerApp * create();$/;"	p	struct:ServerAppCreator	access:public	signature:()
+destroy	ServerApp.cpp	/^void ServerAppCreator::destroy(ServerApp *p) {$/;"	f	class:ServerAppCreator	signature:(ServerApp *p)
+destroy	ServerApp.h	/^    static void destroy(ServerApp *p);$/;"	p	struct:ServerAppCreator	access:public	signature:(ServerApp *p)
+finalize	ServerApp.h	/^    virtual void finalize() = 0;$/;"	p	class:ServerApp	access:public	signature:()
+id	ServerApp.cpp	/^		int id;$/;"	m	class:my_class	file:	access:private
+initialize	ServerApp.h	/^    virtual bool initialize(int argc, const char *argv[]) = 0;$/;"	p	class:ServerApp	access:public	signature:(int argc, const char *argv[])
+m_mainLoop	ServerApp.h	/^    RunLoop m_mainLoop;$/;"	m	class:ServerApp	access:protected
+m_path	LogPrinter.h	/^    str8 m_path;$/;"	m	class:LogPrinterFile	access:protected
+main	ServerApp.h	/^    int main(int argc, const char *argv[]);$/;"	p	class:ServerApp	access:public	signature:(int argc, const char *argv[])
+my_class	ServerApp.cpp	/^class my_class$/;"	c	file:
+my_class::id	ServerApp.cpp	/^		int id;$/;"	m	class:my_class	file:	access:private
+my_class::setId	ServerApp.cpp	/^		void setId(int id){id = id;}$/;"	f	class:my_class	access:public	signature:(int id)
+pfn	ServerApp.cpp	/^ServerApp * (*& ServerAppCreator::pfn())() {$/;"	f	signature:()
+pfn	ServerApp.h	/^    static ServerApp * (*&pfn())();$/;"	p	struct:ServerAppCreator	access:public	signature:()
+post	ServerApp.h	/^    void post(std::function<void()> fn);$/;"	p	class:ServerApp	access:public	signature:(std::function<void()> fn)
+print	LogPrinter.cpp	/^void LogPrinterFile::print(Log::Level l, const c8 *, int, str8 &&s) {$/;"	f	class:LogPrinterFile	signature:(Log::Level l, const c8 *, int, str8 &&s)
+print	LogPrinter.h	/^    virtual void print(Log::Level, const c8 *, int, str8 &&);$/;"	p	class:LogPrinterFile	access:public	signature:(Log::Level, const c8 *, int, str8 &&)
+quit	ServerApp.h	/^    void quit();$/;"	p	class:ServerApp	access:public	signature:()
+setId	ServerApp.cpp	/^		void setId(int id){id = id;}$/;"	f	class:my_class	access:public	signature:(int id)
+test	ServerApp.cpp	/^void test()$/;"	f	signature:()
+update	ServerApp.h	/^    virtual void update(f32 deltaTime) {} \/\/ seconds.$/;"	f	class:ServerApp	access:public	signature:(f32 deltaTime)
+~ServerApp	ServerApp.cpp	/^ServerApp::~ServerApp() {$/;"	f	class:ServerApp	signature:()
+~ServerApp	ServerApp.h	/^    virtual ~ServerApp();$/;"	p	class:ServerApp	access:public	signature:()

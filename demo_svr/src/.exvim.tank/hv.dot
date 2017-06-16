@@ -1,0 +1,16 @@
+digraph INHERITS {
+rankdir=LR;
+"GameObject" -> "CGrass"
+"GameObject" -> "CProperty"
+"GameObject" -> "GameEntity"
+"GameObject" -> "CProtectMask"
+"GameObject" -> "GameBullet"
+"CProperty" -> "CMoney"
+"CProperty" -> "CSpeedUpProperty"
+"GameEntity" -> "GameStaticEntity"
+"GameEntity" -> "GameDynamicEntity"
+"GameStaticEntity" -> "CWall"
+"GameStaticEntity" -> "CRiver"
+"GameDynamicEntity" -> "GameTank"
+"GameTank" -> "GamePlayer"
+}

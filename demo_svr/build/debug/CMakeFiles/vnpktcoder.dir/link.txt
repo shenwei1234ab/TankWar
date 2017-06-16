@@ -1,0 +1,1 @@
+/usr/bin/c++    -O0 -g -gdwarf-2 -pg -std=c++11 -pthread -Wall -Werror -fPIC -g    CMakeFiles/vnpktcoder.dir/home/leave/workspace_tankwar/vnlib2/src/pktcoder/vnPktCoder_csharp.cpp.o CMakeFiles/vnpktcoder.dir/home/leave/workspace_tankwar/vnlib2/src/pktcoder/vnPktCoder.cpp.o  -o vnpktcoder  -L/usr/lib64/mysql -rdynamic libvnnet.a libvnlex.a libvnbase.a -Wl,-rpath,/usr/lib64/mysql 

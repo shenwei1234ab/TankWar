@@ -1,0 +1,10 @@
+console_mode = true
+
+link_pool_threads = 1
+
+//public_port = 32001
+
+db_threads = 1
+db_server = "192.168.2.243"
+db_user = "demo"
+db_passwd = "demopwd"
